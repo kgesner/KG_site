@@ -1,0 +1,891 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+/*.container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-auto-rows: minmax(5rem, auto);
+  grid-template-areas:
+  "header    header     header"
+  "intro     intro      intro"
+  ".         digs-home  ."
+  ".         project-2  ."
+  ".         project-3  ."
+  "foot      foot       foot";
+}
+
+/* Layout */
+
+nav {
+  background-color: #caadb4;
+}
+
+.header {
+  background-image: url("images/hero.png");
+  background-position: center;
+  background-size: cover;
+  grid-area: header;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+section {
+  background-color: #e0ccce;
+  border-radius: .25rem;
+  margin: 5%;
+  padding: 5%;
+  position: relative;
+}
+
+.foot {
+  background-image: url("images/hero.png");
+  /*grid-area: foot;*/
+  padding: 0 0 22% 0;
+}
+
+
+.footer-icon {
+  float: left;
+  margin: 6% 2% 0% 2%;
+  width: 9%;
+}
+
+.footer-logo-1 {
+  float: right;
+  margin: 2% 5% 2% 2%;
+}
+
+.footer-logo-2 {
+  float: right;
+  margin: 11% 0 0 0;
+}
+
+.role {
+  float: left;
+  margin: 0% 7% 5% 12%;
+  overflow: auto;
+  width: 35%;
+}
+
+.tools {
+  margin: 5%;
+  overflow: auto;
+  width: 35%;
+}
+
+
+/* TEXT STYLES */
+
+a {
+  color: #391f2a;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+
+h3 {
+  color: #391f2a;
+  font-family: "Quicksand",sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  margin-top: .5rem;
+}
+
+
+
+h4 {
+  color: #391f2a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.7rem;
+  margin: 2% 20%;
+  padding: 0 5%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+li {
+  color: #391f2a;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+}
+
+li.about {
+  float: right;
+  font-size: 1.5rem;
+  margin: 8% 2% 1% 1%;
+  width: 15%;
+}
+
+li.email, .linkedin, .pinterest {
+  float: left;
+  padding: 1%;
+}
+
+li.kg-logo {
+  float: left;
+  margin: 4% 0% 3% 4%;
+  padding: 1% 1% 1% 1%;
+  width: 11%;
+}
+
+li.k-logo {
+  float: right;
+  padding: 1%;
+}
+
+li.name {
+  float: left;
+  font-family: "Filson", "Quicksand", Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 5.75% 0;
+  padding: 0 1%;
+  width: 10%;
+}
+
+li.projects, .resume {
+  float: right;
+  font-size: 1.5rem;
+  margin: 8% 1% 1% 1%;
+  width: 20%;
+}
+
+p {
+  color: #391f2a;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 5%;
+}
+
+
+/*p.klogo {
+  float: right;
+}*/
+
+p.sub-head {
+  font-size: 1.4 rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+/* Images */
+
+
+
+/*@media screen and (min-width: 320px) {
+  .container {
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+    "header    header    header"
+    "intro     intro     intro"
+    ".         digs-home ."
+    ".         project-2 ."
+    ".         project-3 ."
+    "foot      foot      foot";
+    width: auto;
+  }
+
+  li {
+    float: right;
+    margin: 1%;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+  }
+
+  li.kg-logo {
+    float: left;
+    margin: 1% 0 1% 5%;
+    padding: 1% 1% 1% 1%;
+    width: 11%;
+  }
+
+  li.name {
+    float: left;
+    font-size: 1.5rem;
+    margin: 4% 0;
+    padding: 0 1%;
+    width: 19%;
+  }
+
+
+
+  li.projects, .resume {
+    font-size: 1.4rem;
+    margin: 9% 0% 1% 0%;
+    width: 20%;
+  }
+
+  li.about {
+    font-size: 1.4rem;
+    margin: 9% 4% 1% 0%;
+    width: 15%;
+  }
+  /*
+  li.list-1 {
+    width: 70%;
+  }
+
+  li.list-2 {
+    margin: 5% 0% 5% 5%;
+    width: 100%;
+  }
+
+  li.footer-logo-1 {
+    width: 11%;
+  }
+
+  .role {
+    margin: 5% 0% 5% 5%;
+    width: 48%;
+  }
+
+  .tools {
+    width: 41%;
+  }
+/*
+  img.pref, .personas, .competitor {
+    width: 30%;
+  }
+
+  img.brain, .logo {
+    width: 47%;
+  }
+
+  img.board, .proto {
+    width: 100%;
+  }
+
+  img.hi-fi-1 {
+    width: 69%;
+  }
+
+  img.hi-fi-2 {
+    margin: 0%;
+  }
+
+  section {
+    overflow: hidden;
+  }
+
+  .footer-icon {
+    width: 11%;
+    margin: 5% 0 5% 1%;
+  }
+
+  .footer-logo-2 {
+    margin: 13% 0 3% 0;
+  }
+
+}
+
+/*
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #E0CCCE;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  header {
+    float: right;
+    margin: 1%;
+    padding: 1% 2% 1% 2%;
+    width: 11%;
+  }
+
+  li.kg-logo {
+    float: left;
+    margin: 1% 0 1% 9%;
+    padding: 1% 1% 1% 1%;
+    width: 6%;
+  }
+
+  li.hero {
+    float: left;
+    margin: 2.25% 0;
+    padding: 0%;
+    width: 8%;
+  }
+
+  li.projects {
+    margin: 1% 9% 1% 0%;
+  }
+
+  li.resume, .about {
+    margin: 1% 2% 1% 1%;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .header {
+    background-color: #E0CCCE;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  header {
+    float: right;
+    margin: 1%;
+    padding: 1% 1% 1% 1%;
+    width: 8%;
+  }
+
+  li.kg-logo {
+    float: left;
+    margin: 1% 0 1% 9%;
+    padding: 1% 1% 1% 1%;
+    width: 5%;
+  }
+
+  li.hero {
+    float: left;
+    margin: 2.25% 0;
+    padding: 0%;
+    width: 8%;
+  }
+
+  li.projects{
+    margin: 1% 9% 1% 0%;
+  }
+
+  li.resume, .about{
+    margin: 1% 2% 1% 1%;
+  }
+
+
+  /*.intro {
+    width: 90%;
+  }*/
+
+/*  .portfolio {
+    margin: 0 auto;
+    /*width: 90%;*/
+/*  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+} */
+
+
+/* ------ STOP HERE ------- */
+
+
+
+
+/* * {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  grid-gap: 1rem 1.5rem;
+  grid-template-areas:
+  "header    header    header"
+  "intro     intro     intro"
+  "digs-home digs-home digs-home"
+  "project-2 project-2 project-2"
+  "project-3 project-3 project-2"
+  "footer    footer    footer";
+}
+
+/* Layout */
+
+/*nav {
+  background-color: #caadb4;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background-image: url("images/hero.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.intro {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+section {
+  background-color: #e0ccce;
+  border-radius: .205rem;
+  /*margin: 5%;
+  padding: 7%;
+}
+
+/*section.digs {
+  background-color: #e0ccce;
+}
+
+section.digs-home {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 3;
+  grid-row-end: 10;
+  margin: 0%;
+}
+
+section.project-2 {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 10;
+  grid-row-end: 16;
+  background-color: #e0ccce;
+  /*margin: 10% 0;
+}
+
+/*section.project-3 {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 16;
+  grid-row-end: 23;
+  background-color: #e0ccce;
+  /*margin: 10% 0;
+}
+
+/*.portfolio {
+  grid-column-start: 2;
+  grid-column-end: 16;
+  grid-row-start: 4;
+  grid-row-end: 10;
+  background-color: #fff;
+  color: #e0ccce;
+  /*padding: 2% 6%;*/
+/*}
+
+footer.foot {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 23;
+  grid-row-end: 24;
+}
+
+.footer-icon {
+  float: left;
+  margin: 4% 2%;
+  width: 5%;
+}
+
+.footer-logo-1 {
+  float: right;
+  margin: 2% 5% 2% 2%;
+}
+
+.footer-logo-2 {
+  float: right;
+  margin: 6% 0;
+}
+
+.role {
+  float: left;
+  margin: 5% 7% 5% 20%;
+  overflow: auto;
+  width: 29%;
+}
+
+.tools {
+  margin: 5%;
+  overflow: auto;
+  width: 29%;
+}
+
+
+/* TEXT STYLES */
+
+/*a {
+  color: #391f2a;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+
+button {
+  background-color: #976774;
+  border: none;
+  border-radius: .05rem;
+  box-shadow: 1px 1px 1px 1px #caadb4;
+  color: #e0ccce;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin: 1% 0;
+}
+
+h3 {
+  color: #391f2a;
+  font-family: "Quicksand",sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+  margin-top: .5rem;
+}
+
+h3.intro {
+  color: #391f2a;
+  line-height: 1.6rem;
+  margin: 0 auto;
+  padding: 6% 9% 3% 9%;
+}
+
+h4 {
+  color: #391f2a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.7rem;
+  margin: 2% 0;
+  text-decoration: underline;
+}
+
+li {
+  color: #391f2a;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.45rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+}
+
+li.about {
+  float: right;
+  font-size: 1.7rem;
+  margin: 8% 2% 1% 1%;
+  width: 10%;
+}
+
+li.email, .linkedin, .pinterest {
+  float: left;
+  padding: 1%;
+}
+
+li.kg-logo {
+  float: left;
+  margin: 4% 0% 3% 4%;
+  padding: 1% 1% 1% 1%;
+  width: 6%;
+}
+
+li.k-logo {
+  float: right;
+  padding: 1%;
+}
+
+li.list-1 {
+  float: left;
+  width: 51%;
+}
+
+li.list-2 {
+  width: 60%;
+}
+
+li.name {
+  float: left;
+  font-family: "Filson", "Quicksand", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 5.75% 0;
+  padding: 0 1%;
+  width: 10%;
+}
+
+li.projects, .resume {
+  float: right;
+  font-size: 1.7rem;
+  margin: 8% 1% 1% 1%;
+  width: 10%;
+}
+
+p {
+  color: #391f2a;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 1% 0;
+}
+
+p.klogo {
+  float: right;
+}
+
+p.sub-head {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+ul {
+  color: #391f2a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin: 1% 0;
+  text-decoration: underline;
+}
+
+
+/* Images */
+
+/*img.digs-home-page, .desk-pref, .purple, .final, .flow, .guide, .hifi-proto, .wireframe {
+  border-radius: .25rem;
+  width: 100%;
+}
+
+img.hi-fi-1 {
+  border-radius: .205rem;
+  width: 60%;
+}
+
+img.hi-fi-2 {
+  border-radius: .205rem;
+  margin: 2%;
+  width: 30%;
+}
+
+img.board, .proto {
+  border-radius: .205rem;
+  margin: 1%;
+  width: 47%;
+}
+
+img.brain, .competitor, .logo, .personas {
+  border-radius: .205rem;
+  margin: 1%;
+  width: 31%;
+}
+
+img.pref {
+  border-radius: .205rem;
+  margin: 1%;
+  width: 17%;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  li.kg-logo {
+    float: left;
+    margin: 1% 0 1% 5%;
+    padding: 1% 1% 1% 1%;
+    width: 11%;
+  }
+
+  li.name {
+    float: left;
+    font-size: 1.5rem;
+    margin: 4% 0;
+    padding: 0 1%;
+    width: 19%;
+  }
+
+  li {
+    float: right;
+    margin: 1%;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+  }
+
+  li.projects, .resume {
+    font-size: 1.4rem;
+    margin: 9% 0% 1% 0%;
+    width: 20%;
+  }
+
+  li.about {
+    font-size: 1.4rem;
+    margin: 9% 4% 1% 0%;
+    width: 15%;
+  }
+
+  li.list-1 {
+    width: 70%;
+  }
+
+  li.list-2 {
+    margin: 5% 0% 5% 5%;
+    width: 100%;
+  }
+
+  li.footer-logo-1 {
+    width: 11%;
+  }
+
+  .role {
+    margin: 5% 0% 5% 5%;
+    width: 48%;
+  }
+
+  .tools {
+    width: 41%;
+  }
+
+  img.pref, .personas, .competitor {
+    width: 30%;
+  }
+
+  img.brain, .logo {
+    width: 47%;
+  }
+
+  img.board, .proto {
+    width: 100%;
+  }
+
+  img.hi-fi-1 {
+    width: 69%;
+  }
+
+  img.hi-fi-2 {
+    margin: 0%;
+  }
+
+  section {
+    overflow: hidden;
+  }
+
+  .footer-icon {
+    width: 11%;
+    margin: 5% 0 5% 1%;
+  }
+
+  .footer-logo-2 {
+    margin: 13% 0 3% 0;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #E0CCCE;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  header {
+    float: right;
+    margin: 1%;
+    padding: 1% 2% 1% 2%;
+    width: 11%;
+  }
+
+  li.kg-logo {
+    float: left;
+    margin: 1% 0 1% 9%;
+    padding: 1% 1% 1% 1%;
+    width: 6%;
+  }
+
+  li.hero {
+    float: left;
+    margin: 2.25% 0;
+    padding: 0%;
+    width: 8%;
+  }
+
+  li.projects {
+    margin: 1% 9% 1% 0%;
+  }
+
+  li.resume, .about {
+    margin: 1% 2% 1% 1%;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .header {
+    background-color: #E0CCCE;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  header {
+    float: right;
+    margin: 1%;
+    padding: 1% 1% 1% 1%;
+    width: 8%;
+  }
+
+  li.kg-logo {
+    float: left;
+    margin: 1% 0 1% 9%;
+    padding: 1% 1% 1% 1%;
+    width: 5%;
+  }
+
+  li.hero {
+    float: left;
+    margin: 2.25% 0;
+    padding: 0%;
+    width: 8%;
+  }
+
+  li.projects{
+    margin: 1% 9% 1% 0%;
+  }
+
+  li.resume, .about{
+    margin: 1% 2% 1% 1%;
+  }
+
+
+  /*.intro {
+    width: 90%;
+  }
+
+  .portfolio {
+    margin: 0 auto;
+    /*width: 90%;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+} */

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.container {
+  /*display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-auto-rows: minmax(5rem, auto);
+  grid-template-areas:
+  "header    header     header"
+  "intro     intro      intro"
+  ".         digs-home  ."
+  ".         project-2  ."
+  ".         project-3  ."
+  "foot      foot       foot";
+*/}
+
+/*.intro {
+  grid-area: intro;
+}
+
+.digs-home {
+  grid-area: digs-home;
+}*/
+
+.project-2 {
+  background-color: #e0ccce;
+  /*grid-area: project-2;*/
+}
+
+.project-3 {
+  background-color: #e0ccce;
+  /*grid-area: project-3;*/
+}
+
+h3.intro {
+  color: #391f2a;
+  line-height: 1.6rem;
+  margin: 0 auto;
+  padding: 6% 9% 3% 9%;
+}
+
+img.purple, .digs-home-page {
+  /*position: absolute;
+  margin-top: -5rem;*/
+  width: 100%;
+}
