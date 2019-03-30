@@ -10,23 +10,16 @@ body {
   background-color: #FFFFFF;
 }
 
-
-/*.portfolio {
-  background-color: #fff;
-  color: #e0ccce;
-}*/
-
-
 button {
   background-color: #976774;
   border: none;
-  border-radius: .05rem;
+  border-radius: .25rem;
   box-shadow: 1px 1px 1px 1px #caadb4;
   color: #e0ccce;
   font-family: "Futura PT", sans-serif;
   font-size: 1.3rem;
   font-weight: 100;
-  margin: 1% 0;
+  margin: 2% 0;
 }
 
 li.list-1 {
@@ -38,12 +31,17 @@ li.list-2 {
   width: 60%;
 }
 
+li.bullet {
+  font-size: 150%;
+  font-weight: 300;
+}
+
 ul.sub-title {
   color: #391f2a;
   font-family: "Quicksand",sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.3rem;
+  font-size: 150%;
+  line-height: 130%;
   margin: 1rem 0;
 }
 
@@ -53,30 +51,41 @@ img.digs-home-page, .desk-pref, .purple, .final, .flow, .guide, .hifi-proto, .wi
 }
 
 img.hi-fi-1 {
-  border-radius: .205rem;
+  border-radius: .25rem;
+  margin: 0 2%;
   width: 60%;
 }
 
 img.hi-fi-2 {
-  border-radius: .205rem;
-  margin: 2%;
+  border-radius: .25rem;
+  margin: 0 2%;
   width: 30%;
 }
 
 img.board, .proto {
-  border-radius: .205rem;
+  border-radius: .25rem;
   margin: 1%;
   width: 47%;
 }
 
 img.brain, .competitor, .logo, .personas {
-  border-radius: .205rem;
+  border-radius: .25rem;
   margin: 1%;
   width: 30%;
 }
 
 img.pref {
-  border-radius: .205rem;
+  border-radius: .25rem;
   margin: 1%;
   width: 17%;
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    font-size: 165%;
+  }
+
+  ul.sub-title {
+    font-size: 170%;
+  }
 }

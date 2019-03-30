@@ -30,17 +30,6 @@ nav {
   background-color: #caadb4;
 }
 
-.header {
-  background-image: url("images/hero.png");
-  background-position: center;
-  background-size: cover;
-  grid-area: header;
-  overflow: hidden;
-  width: 100%;
-}
-
-
-
 section {
   background-color: #e0ccce;
   border-radius: .25rem;
@@ -49,12 +38,15 @@ section {
   position: relative;
 }
 
+img {
+  border-radius: .25rem;
+}
+
 .foot {
   background-image: url("images/hero.png");
   /*grid-area: foot;*/
   padding: 0 0 22% 0;
 }
-
 
 .footer-icon {
   float: left;
@@ -72,15 +64,24 @@ section {
   margin: 11% 0 0 0;
 }
 
+.header {
+  background-image: url("images/hero.png");
+  background-position: center;
+  background-size: cover;
+  /*grid-area: header;*/
+  overflow: hidden;
+  width: 100%;
+}
+
 .role {
   float: left;
-  margin: 0% 7% 5% 12%;
+  margin: 0% 7% 0% 12%;
   overflow: auto;
   width: 35%;
 }
 
 .tools {
-  margin: 5%;
+  margin: 5% 5% 0 5%;
   overflow: auto;
   width: 35%;
 }
@@ -103,8 +104,6 @@ h3 {
   margin-top: .5rem;
 }
 
-
-
 h4 {
   color: #391f2a;
   font-family: "Quicksand", sans-serif;
@@ -120,15 +119,15 @@ h4 {
 li {
   color: #391f2a;
   font-family: "Futura PT", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 140%;
+  line-height: 130%;
   text-decoration: none;
 }
 
 li.about {
   float: right;
-  font-size: 1.5rem;
-  margin: 8% 2% 1% 1%;
+  font-size: 150%;
+  margin: 13% 2% 1% 1%;
   width: 15%;
 }
 
@@ -139,9 +138,9 @@ li.email, .linkedin, .pinterest {
 
 li.kg-logo {
   float: left;
-  margin: 4% 0% 3% 4%;
+  margin: 5% 6% 3% 4%;
   padding: 1% 1% 1% 1%;
-  width: 11%;
+  width: 4.5%;
 }
 
 li.k-logo {
@@ -154,15 +153,15 @@ li.name {
   font-family: "Filson", "Quicksand", Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
-  margin: 5.75% 0;
+  margin: 7% 0;
   padding: 0 1%;
   width: 10%;
 }
 
 li.projects, .resume {
   float: right;
-  font-size: 1.5rem;
-  margin: 8% 1% 1% 1%;
+  font-size: 150%;
+  margin: 13% 1% 1% 1%;
   width: 20%;
 }
 
@@ -172,132 +171,17 @@ p {
   font-size: 1.4rem;
   line-height: 2rem;
   margin: 5%;
+  text-align: center;
 }
-
-
-/*p.klogo {
-  float: right;
-}*/
 
 p.sub-head {
   font-size: 1.4 rem;
   font-weight: 400;
+  text-align: left;
   text-decoration: underline;
 }
 
 
-/* Images */
-
-
-
-/*@media screen and (min-width: 320px) {
-  .container {
-    grid-gap: 2rem;
-    grid-auto-rows: minmax(50px, auto);
-    grid-template-areas:
-    "header    header    header"
-    "intro     intro     intro"
-    ".         digs-home ."
-    ".         project-2 ."
-    ".         project-3 ."
-    "foot      foot      foot";
-    width: auto;
-  }
-
-  li {
-    float: right;
-    margin: 1%;
-    padding: 1% 1% 1% 1%;
-    width: 100%;
-  }
-
-  li.kg-logo {
-    float: left;
-    margin: 1% 0 1% 5%;
-    padding: 1% 1% 1% 1%;
-    width: 11%;
-  }
-
-  li.name {
-    float: left;
-    font-size: 1.5rem;
-    margin: 4% 0;
-    padding: 0 1%;
-    width: 19%;
-  }
-
-
-
-  li.projects, .resume {
-    font-size: 1.4rem;
-    margin: 9% 0% 1% 0%;
-    width: 20%;
-  }
-
-  li.about {
-    font-size: 1.4rem;
-    margin: 9% 4% 1% 0%;
-    width: 15%;
-  }
-  /*
-  li.list-1 {
-    width: 70%;
-  }
-
-  li.list-2 {
-    margin: 5% 0% 5% 5%;
-    width: 100%;
-  }
-
-  li.footer-logo-1 {
-    width: 11%;
-  }
-
-  .role {
-    margin: 5% 0% 5% 5%;
-    width: 48%;
-  }
-
-  .tools {
-    width: 41%;
-  }
-/*
-  img.pref, .personas, .competitor {
-    width: 30%;
-  }
-
-  img.brain, .logo {
-    width: 47%;
-  }
-
-  img.board, .proto {
-    width: 100%;
-  }
-
-  img.hi-fi-1 {
-    width: 69%;
-  }
-
-  img.hi-fi-2 {
-    margin: 0%;
-  }
-
-  section {
-    overflow: hidden;
-  }
-
-  .footer-icon {
-    width: 11%;
-    margin: 5% 0 5% 1%;
-  }
-
-  .footer-logo-2 {
-    margin: 13% 0 3% 0;
-  }
-
-}
-
-/*
 @media screen and (min-width: 768px) {
   .header {
     background-color: #E0CCCE;
@@ -306,17 +190,37 @@ p.sub-head {
   }
 
   header {
-    float: right;
     margin: 1%;
     padding: 1% 2% 1% 2%;
     width: 11%;
   }
 
+  h3 {
+    font-size: 1.9rem;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 200%;
+  }
+
+  li {
+    font-size: 120%;
+    font-weight: 200;
+  }
+
   li.kg-logo {
     float: left;
-    margin: 1% 0 1% 9%;
+    margin: 4% 10% 1% 3%;
     padding: 1% 1% 1% 1%;
     width: 6%;
+  }
+
+  li.name {
+    font-size: 260%;
+    font-weight: 500;
+    line-height: 97%;
+    padding: 10% 0 0 0;
   }
 
   li.hero {
@@ -326,19 +230,51 @@ p.sub-head {
     width: 8%;
   }
 
-  li.projects {
-    margin: 1% 9% 1% 0%;
+  li.about {
+    font-size: 200%;
+    font-weight: 400;
+    margin: 21% 3% 1% 0%;
+    width: 9%;
   }
 
-  li.resume, .about {
-    margin: 1% 2% 1% 1%;
+  li.projects, .resume {
+    font-size: 200%;
+    font-weight: 400;
+    margin: 21% 2% 1% 1%;
+    width: 11%;
   }
 
-  h3 {
-    font-size: 1.4rem;
+  p {
+    font-size: 150%;
+    line-height: 150%;
+    margin: 0%;
   }
+
+  .foot {
+    padding: 0 0 14% 0;
+  }
+
+  .footer-icon {
+    margin: 4% 2% 0% 2%;
+    width: 4%;
+  }
+
+  .footer-logo-2 {
+    margin: 6% 0 0 0;
+  }
+
+  .role {
+    font-size: 125%;
+    line-height: 150%;
+    margin: 5% 7% 0% 23%;
+  }
+
+  .tools {
+    font-size: 125%;
+    line-height: 150%;
+  }
+
 }
-
 
 @media screen and (min-width: 1025px) {
   .header {
@@ -348,15 +284,24 @@ p.sub-head {
   }
 
   header {
-    float: right;
     margin: 1%;
     padding: 1% 1% 1% 1%;
     width: 8%;
   }
 
+  h4 {
+    font-size: 250%;
+  }
+
+  li {
+    font-size: 140%;
+    font-weight: 200;
+    line-height: 130%;
+  }
+
   li.kg-logo {
     float: left;
-    margin: 1% 0 1% 9%;
+    margin: 1% 7% 1% 5%;
     padding: 1% 1% 1% 1%;
     width: 5%;
   }
@@ -368,28 +313,52 @@ p.sub-head {
     width: 8%;
   }
 
+  li.name {
+    font-size: 300%;
+    font-weight: 500;
+    line-height: 97%;
+    margin: 7% 0 0 0;
+    padding: 3.75% 0% 0 0;
+  }
+
   li.projects{
     margin: 1% 9% 1% 0%;
   }
 
-  li.resume, .about{
-    margin: 1% 2% 1% 1%;
+  li.about{
+    font-size: 200%;
+    font-weight: 500;
+    margin: 15% 2% 1% 1%;
   }
 
-
-  /*.intro {
-    width: 90%;
-  }*/
-
-/*  .portfolio {
-    margin: 0 auto;
-    /*width: 90%;*/
-/*  }
-
-  h3 {
-    font-size: 1.6rem;
+  li.projects, .resume {
+    font-size: 200%;
+    font-weight: 500;
+    margin: 15% 2% 1% 1%;
+    width: 11%;
   }
-} */
+
+  p {
+    font-size: 175%;
+  }
+
+  .foot {
+    padding: 0 0 11% 0;
+  }
+
+  .footer-icon {
+    margin: 4% 0% 0% 2%;
+    width: 3%;
+  }
+
+  .footer-logo-2 {
+    margin: 5% 0 0 0;
+  }
+
+  .tools {
+    margin: 5% 5% 0% 5%;
+  }
+
 
 
 /* ------ STOP HERE ------- */

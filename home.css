@@ -32,6 +32,7 @@ body {
   grid-area: digs-home;
 }*/
 
+
 .project-2 {
   background-color: #e0ccce;
   /*grid-area: project-2;*/
@@ -42,15 +43,21 @@ body {
   /*grid-area: project-3;*/
 }
 
-h3.intro {
+/*h3.intro {
   color: #391f2a;
   line-height: 1.6rem;
   margin: 0 auto;
   padding: 6% 9% 3% 9%;
-}
+}*/
 
 img.purple, .digs-home-page {
   /*position: absolute;
   margin-top: -5rem;*/
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  h3.intro {
+    line-height: 2.2rem;
+  }
 }
