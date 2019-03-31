@@ -51,29 +51,32 @@ button {
 }
 
 .foot {
-  background-image: url("images/hero.png");
+  background-image: url("../images/Hero.png");
   /*grid-area: foot;*/
   padding: 0 0 22% 0;
 }
 
 .footer-icon {
   float: left;
+  list-style: none;
   margin: 6% 2% 0% 2%;
   width: 9%;
 }
 
 .footer-logo-1 {
   float: right;
+  list-style: none;
   margin: 2% 5% 2% 2%;
 }
 
 .footer-logo-2 {
   float: right;
+  list-style: none;
   margin: 11% 0 0 0;
 }
 
 .header {
-  background-image: url("images/hero.png");
+  background-image: url("../images/hero.png");
   background-position: center;
   background-size: cover;
   /*grid-area: header;*/
@@ -120,6 +123,11 @@ img {
   width: 100%;
 }
 
+img.kglogo {
+  width: 100%;
+}
+
+/* Project Images */
 img.board, .proto {
   border-radius: .25rem;
   margin: 1%;
@@ -184,16 +192,6 @@ h4 {
   text-decoration: underline;
 }
 
-h5 {
-  color: #391f2a;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  font-size: 150%;
-  line-height: 120%;
-  margin: 2% 0%;
-  text-align: center;
-}
-
 li {
   color: #391f2a;
   font-family: "Futura PT", sans-serif;
@@ -205,13 +203,9 @@ li {
 li.about {
   float: right;
   font-size: 150%;
-  margin: 13% 2% 1% 1%;
-  width: 15%;
-}
-
-li.bullet {
-  font-size: 150%;
-  font-weight: 300;
+  list-style: none;
+  margin: 18% 2% 1% 1%;
+  width: 13%;
 }
 
 li.email, .linkedin, .pinterest {
@@ -221,9 +215,10 @@ li.email, .linkedin, .pinterest {
 
 li.kg-logo {
   float: left;
-  margin: 5% 6% 3% 4%;
+  list-style: none;
+  margin: 5% 0% 3% 5%;
   padding: 1% 1% 1% 1%;
-  width: 4.5%;
+  width: 15%;
 }
 
 li.k-logo {
@@ -231,30 +226,23 @@ li.k-logo {
   padding: 1%;
 }
 
-li.list-1 {
-  float: left;
-  width: 51%;
-}
-
-li.list-2 {
-  width: 60%;
-}
-
 li.name {
   float: left;
   font-family: "Filson", "Quicksand", Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
-  margin: 7% 0;
+  list-style: none;
+  margin: 12% 0 0 0;
   padding: 0 1%;
-  width: 10%;
+  width: 22%;
 }
 
 li.projects, .resume {
   float: right;
   font-size: 150%;
-  margin: 13% 1% 1% 1%;
-  width: 20%;
+  list-style: none;
+  margin: 18% 1% 1% 1%;
+  width: 18%;
 }
 
 p {
@@ -262,15 +250,38 @@ p {
   font-family: "Futura PT", sans-serif;
   font-size: 1.4rem;
   line-height: 2rem;
-  margin: 5%;
+  margin: 5% 0;
   text-align: center;
 }
 
 p.sub-head {
-  font-size: 1.4 rem;
+  font-size: 160%;
   font-weight: 400;
   text-align: left;
   text-decoration: underline;
+}
+
+p.left {
+  text-align: left;
+}
+
+
+/* Project.html only */
+li.bullet {
+  font-size: 150%;
+  font-weight: 300;
+}
+
+
+/* Bio.html only */
+h5 {
+  color: #391f2a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  line-height: 120%;
+  margin: 2% 0%;
+  text-align: center;
 }
 
 ul.sub-title {
@@ -281,6 +292,7 @@ ul.sub-title {
   line-height: 130%;
   margin: 1rem 0;
 }
+
 
 @media screen and (min-width: 768px) {
   button {
@@ -317,15 +329,19 @@ ul.sub-title {
   }
 
   li {
-    font-size: 120%;
+    font-size: 130%;
     font-weight: 200;
   }
 
   li.about {
     font-size: 200%;
-    font-weight: 400;
-    margin: 21% 3% 1% 0%;
+    font-weight: 500;
+    margin: 17% 3% 1% 0%;
     width: 9%;
+  }
+
+  li.bullet {
+    font-size: 160%;
   }
 
   li.hero {
@@ -337,33 +353,37 @@ ul.sub-title {
 
   li.kg-logo {
     float: left;
-    margin: 4% 10% 1% 3%;
+    margin: 4% 1% 1% 3%;
     padding: 1% 1% 1% 1%;
-    width: 6%;
+    width: 13%;
   }
 
   li.name {
     font-size: 260%;
     font-weight: 500;
     line-height: 97%;
-    padding: 10% 0 0 0;
+    padding: 1% 0 0 0;
   }
 
   li.projects, .resume {
     font-size: 200%;
-    font-weight: 400;
-    margin: 21% 2% 1% 1%;
+    font-weight: 500;
+    margin: 17% 2% 1% 1%;
     width: 11%;
   }
 
   p {
-    font-size: 150%;
+    font-size: 160%;
     line-height: 150%;
     margin: 0%;
   }
 
+  p.sub-head {
+    font-size: 175%;
+  }
+
   ul.sub-title {
-    font-size: 170%;
+    font-size: 180%;
   }
 
   .foot {
@@ -404,12 +424,18 @@ ul.sub-title {
     width: 8%;
   }
 
+  h3.intro {
+    font-size: 215%;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
   h4 {
     font-size: 250%;
   }
 
   li {
-    font-size: 140%;
+    font-size: 170%;
     font-weight: 200;
     line-height: 130%;
   }
@@ -417,14 +443,18 @@ ul.sub-title {
   li.about{
     font-size: 200%;
     font-weight: 500;
-    margin: 15% 2% 1% 1%;
+    margin: 12% 2% 1% 1%;
+  }
+
+  li.bullet {
+    font-size: 175%;
   }
 
   li.kg-logo {
     float: left;
-    margin: 1% 7% 1% 5%;
+    margin: 1% 0% 1% 5%;
     padding: 1% 1% 1% 1%;
-    width: 5%;
+    width: 11%;
   }
 
   li.hero {
@@ -435,22 +465,30 @@ ul.sub-title {
   }
 
   li.name {
-    font-size: 300%;
+    font-size: 350%;
     font-weight: 500;
     line-height: 97%;
-    margin: 7% 0 0 0;
+    margin: 4% 0 0 0;
     padding: 3.75% 0% 0 0;
   }
 
   li.projects, .resume {
     font-size: 200%;
     font-weight: 500;
-    margin: 15% 2% 1% 1%;
+    margin: 12% 2% 1% 1%;
     width: 11%;
   }
 
   p {
-    font-size: 175%;
+    font-size: 180%;
+  }
+
+  p.sub-head {
+    font-size: 180%;
+  }
+
+  ul.sub-title {
+    font-size: 190%;
   }
 
   .foot {
@@ -463,7 +501,7 @@ ul.sub-title {
   }
 
   .footer-logo-2 {
-    margin: 5% 0 0 0;
+    margin: 4.55% 0 0 0;
   }
 
   .tools {
