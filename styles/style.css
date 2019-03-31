@@ -284,6 +284,16 @@ h5 {
   text-align: center;
 }
 
+h5.project {
+  color: #391f2a;
+  font-family: "Quicksand",sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  line-height: 130%;
+  margin: 1rem 0;
+  text-align: left;
+}
+/*
 ul.sub-title {
   color: #391f2a;
   font-family: "Quicksand",sans-serif;
@@ -291,7 +301,7 @@ ul.sub-title {
   font-size: 150%;
   line-height: 130%;
   margin: 1rem 0;
-}
+}*/
 
 
 @media screen and (min-width: 768px) {
@@ -326,6 +336,11 @@ ul.sub-title {
 
   h5 {
     font-size: 190%;
+  }
+
+  h5.project {
+    font-size: 180%;
+    text-align: left;
   }
 
   li {
@@ -382,9 +397,9 @@ ul.sub-title {
     font-size: 175%;
   }
 
-  ul.sub-title {
+  /*ul.sub-title {
     font-size: 180%;
-  }
+  }*/
 
   .foot {
     padding: 0 0 14% 0;
