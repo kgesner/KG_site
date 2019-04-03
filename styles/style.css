@@ -140,7 +140,7 @@ img.brain, .competitor, .logo, .personas {
   width: 30%;
 }
 
-img.digs-home-page, .desk-pref, .purple, .final, .flow, .guide, .hifi-proto, .wireframe {
+img.digs-home-page, .desk-pref, .purple, .final, .flow, .guide, .hifi-proto, .pref, .wireframe {
   border-radius: .25rem;
   width: 100%;
 }
@@ -157,11 +157,6 @@ img.hi-fi-2 {
   width: 30%;
 }
 
-img.pref {
-  border-radius: .25rem;
-  margin: 1%;
-  width: 17%;
-}
 
 /* TEXT STYLES */
 
