@@ -28,12 +28,14 @@ body {
 
 nav {
   background-color: #caadb4;
+  max-width: 1200px;
 }
 
 section {
   background-color: #e0ccce;
   border-radius: .25rem;
   margin: 5%;
+  max-width: 1200px;
   padding: 5%;
   position: relative;
 }
@@ -84,12 +86,12 @@ button {
   width: 100%;
 }
 
-.project-2 {
+/*.project-2 {
   background-color: #e0ccce;
   /*grid-area: project-2;*/
 }
 
-.project-3 {
+/*.project-3 {
   background-color: #e0ccce;
   /*grid-area: project-3;*/
 }
@@ -130,6 +132,10 @@ img {
 img.kglogo {
   width: 100%;
 }
+
+/*img.kglogo:click {
+  color: #e0ccce;
+}*/
 
 /* Project Images */
 img.board1, .board2 {
@@ -220,6 +226,14 @@ a {
   text-decoration: none;
 }
 
+a.current {
+  color: white;
+}
+
+a.current:hover {
+  color: #e0ccce;
+}
+
 h3 {
   color: #391f2a;
   font-family: "Quicksand",sans-serif;
@@ -246,15 +260,20 @@ li {
   font-family: "Futura PT", sans-serif;
   font-size: 140%;
   line-height: 130%;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 li.about {
+  color: #391f2a;
   float: right;
   font-size: 150%;
   list-style: none;
   margin: 18% 2% 1% 1%;
   width: 13%;
+}
+
+li.about:hover {
+  font-style: italic;
 }
 
 li.email, .linkedin, .pinterest {
@@ -286,12 +305,17 @@ li.name {
   width: 22%;
 }
 
-li.projects, .resume {
+li.projects, .resume{
   float: right;
   font-size: 150%;
   list-style: none;
   margin: 18% 1% 1% 1%;
-  width: 18%;
+  padding-left: 1%;
+  width: 17%;
+}
+
+li.projects:hover, .resume:hover {
+  font-style: italic;
 }
 
 p {
@@ -319,6 +343,11 @@ p.left {
 li.bullet {
   font-size: 150%;
   font-weight: 300;
+  margin: 0 7%;
+}
+
+ul {
+  list-style: circle;
 }
 
 
@@ -406,6 +435,7 @@ ul.sub-title {
 
   li.bullet {
     font-size: 160%;
+    margin: 0 3%;
   }
 
   li.hero {
@@ -463,6 +493,10 @@ ul.sub-title {
     margin: 6% 0 0 0;
   }
 
+  .moodboard, .prototype, .pref-test {
+    padding-top: 50%;
+  }
+
   .role {
     font-size: 125%;
     line-height: 150%;
@@ -508,7 +542,7 @@ ul.sub-title {
     line-height: 130%;
   }
 
-  li.about{
+  li.about {
     font-size: 200%;
     font-weight: 500;
     margin: 12% 2% 1% 1%;
@@ -570,6 +604,10 @@ ul.sub-title {
 
   .footer-logo-2 {
     margin: 4.55% 0 0 0;
+  }
+
+  .moodboard, .prototype, .pref-test {
+    padding-top: 50%;
   }
 
   .tools {
