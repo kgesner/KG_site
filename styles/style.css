@@ -94,6 +94,10 @@ button {
   /*grid-area: project-3;*/
 }
 
+.moodboard, .prototype, .pref-test {
+  padding-top: 45%;
+}
+
 .purple, .digs-home-page {
   /*position: absolute;
   margin-top: -5rem;*/
@@ -128,10 +132,47 @@ img.kglogo {
 }
 
 /* Project Images */
-img.board, .proto {
+img.board1, .board2 {
   border-radius: .25rem;
   margin: 1%;
-  width: 47%;
+  position: absolute;
+  width: 50%;
+}
+
+img.board1 {
+  margin: -46% 0 0 2%;
+}
+
+img.board2 {
+  margin: -34% 0% 0% 36%;
+}
+
+img.pref-desk1, .pref-desk2, .pref-desk3 {
+  margin: -30% 0 0 0;
+  position: absolute;
+  width: 32%;
+}
+
+.pref-desk1 {
+
+}
+
+img.pref-mob1, .pref-mob2, .pref-mob3, .pref-mob4, .pref-mob5 {
+  width: 19%;
+}
+
+img.proto1, .proto2 {
+  border-radius: .25rem;
+  position: absolute;
+  width: 50%;
+}
+
+img.proto1 {
+  margin: -46% 0 0 10%;
+}
+
+img.proto2 {
+  margin: -34% 0% 0% 30%;
 }
 
 img.brain, .competitor, .logo, .personas {
@@ -140,7 +181,7 @@ img.brain, .competitor, .logo, .personas {
   width: 30%;
 }
 
-img.digs-home-page, .desk-pref, .purple, .final, .flow, .guide, .hifi-proto, .pref, .wireframe {
+img.digs-home-page, .purple, .final, .flow, .guide, .hifi-proto,, .wireframe {
   border-radius: .25rem;
   width: 100%;
 }
@@ -155,6 +196,11 @@ img.hi-fi-2 {
   border-radius: .25rem;
   margin: 0 2%;
   width: 30%;
+}
+
+img.wireframe {
+  width: 75%;
+  margin: 0 12.5%;
 }
 
 
