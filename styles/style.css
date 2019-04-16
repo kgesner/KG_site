@@ -395,6 +395,7 @@ h5[class*=p] {
 
 h5[class="p-persona"] {
   padding-bottom: 444%;
+  padding-left: 5%;
 }
 
 h5[class="p-proto"] {
@@ -444,15 +445,19 @@ ul.no-bullet {
 }
 
 .color-palette {
-  margin: 15% 0;
+  margin: 5% 0;
   text-align: center;
 }
 
 .email-sig {
   background-color: #ffffff;
-  margin: 1% auto 15% auto;
+  margin: 1% auto 5% auto;
   padding: 3%;
   width: 67%;
+}
+
+.e-logo {
+  width: 25%;
 }
 
 .goal {
@@ -503,8 +508,14 @@ p[class="sg-num"] {
 }
 
 .patterns, .logo-misuse {
-  margin: 15% auto;
+  margin: 5% auto;
   text-align: center;
+}
+
+.patterns, .type, .color-palette, .logo-misuse, .voice {
+  background-color: #ffffff;
+  border-radius: .25rem;
+  padding: 2.5% 5%;
 }
 
 .pattern-1 {
@@ -624,13 +635,13 @@ p[class="sg-num"] {
 }
 
 .type {
-  margin: 15% 0;
+  margin: 5% 0;
 }
 
-.type-guide, .patterns, .type, .color-palette, .logo-misuse, .voice {
+.type-guide {
   background-color: #ffffff;
-  border-radius: .25rem;
-  padding: 1% 5%;
+  margin-top: 5%;
+  padding: 2.5% 5% 2.5% 5%;
 }
 
 .user-goals {
@@ -638,7 +649,7 @@ p[class="sg-num"] {
 }
 
 .voice {
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 2% 5%;
   text-align: center;
   width: 36%;
@@ -693,7 +704,6 @@ ul.sub-title {
     background-color: #E8C4C1;
   }
 
-
   header {
     margin: 1%;
     padding: 1% 2% 1% 2%;
@@ -722,9 +732,29 @@ ul.sub-title {
     text-align: left;
   }
 
+  h5[class*="p"] {
+    font-size: 200%;
+  }
+
+  h5[class="p-persona"] {
+    padding-bottom: 350%;
+  }
+
+  h5[class="p-proto"] {
+    padding-bottom: 81%;
+  }
+
+  img.board2 {
+    margin: -54% 0% 0% 8%;
+  }
+
+  img.flow {
+    padding-bottom: 2%;
+  }
+
   li {
-    font-size: 130%;
-    font-weight: 200;
+    font-size: 150%;
+    font-weight: 300;
   }
 
   li.about {
@@ -776,14 +806,19 @@ ul.sub-title {
 
   p.sub-head {
     font-size: 175%;
+    margin: 3% 0;
   }
 
-  /*ul.sub-title {
-    font-size: 180%;
-  }*/
+  .e-logo {
+    margin: 3% 0%;
+    width: 35%;
+  }
 
-  .brainstorm {
-    padding-top: 175%;
+  .email-sig {
+    float: left;
+    margin: 0 16%;
+    overflow: auto;
+    width: 27%;
   }
 
   .foot {
@@ -799,16 +834,42 @@ ul.sub-title {
     margin: 5% 0 0 0;
   }
 
+  .jeff {
+    margin: -354% 10%;
+  }
+
+  .jodi {
+    margin: -236% 10%;
+  }
+
+  .brett {
+    margin: -123% 10%;
+  }
+
+  .logo {
+    margin: 1% 30%;
+    width: 40%;
+  }
+
   .moodboard, .prototype {
-    padding-top: 50%;
+    padding-top: 2%;
+  }
+
+  .motive {
+    margin: 5% 0 5% 0;
   }
 
   .my-intro {
     background-color: #D5B966;
   }
 
-  .pref-test {
-    padding-top: 200%;
+  .e-logo {
+    margin: 3% 1%;
+    width: 21%;
+  }
+
+  .personas {
+    width: 35%;
   }
 
   .pref-mob2 {
@@ -817,6 +878,14 @@ ul.sub-title {
 
   .pref-mob4 {
     margin: -55% 0 0 47%;
+  }
+
+  .proto1 {
+    margin: -76% 0 0 0%;
+  }
+
+  .proto2 {
+    margin: -37% 0% 0% 30%;
   }
 
   li.li-prob {
@@ -841,6 +910,16 @@ ul.sub-title {
   .tools {
     font-size: 125%;
     line-height: 150%;
+  }
+
+  .user-goals {
+    padding: 4% 0 0 0;
+  }
+
+  .voice {
+    margin: 5% 5% 15% 5%;
+    overflow: auto;
+    width: 21%;
   }
 }
 
