@@ -29,16 +29,62 @@ body {
 nav {
   background-color: #20435D;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 section {
-  background-color: #C0D5C9;
   border-radius: .25rem;
   margin: 5% auto;
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 5%;
   position: relative;
+}
+
+table {
+  width: auto;
+}
+
+th, td {
+  color: #20435D;
+  font-family: "Futura PT", sans-serif;
+  padding: .5%;
+}
+
+th {
+  border-top: .2rem solid #20435D;
+  color: #20435D;
+  font-size: 135%;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  text-align: left;
+}
+
+.line {
+  border-top: .2rem solid #000000;
+}
+
+td {
+  font-size: 125%;
+}
+
+tr.even {
+  background-color: #C0D5C9;
+}
+
+.digs, .moodboard {
+  background-color: #C0D5C9;
+}
+
+.user-goals, .style-guide {
+  background-color: #E8C4C1;
+}
+
+.user-flows, .pref-test {
+  background-color: #77aca9;
+}
+
+.prototype, .final-design {
+  background-color: #E3A29A;
 }
 
 /*button {
@@ -63,7 +109,7 @@ section {
   font-size: 175%;
   font-weight: 300;
   height: 4rem;
-  margin: 6% auto;
+    margin: 3% auto 0% auto;
   width: 13rem;
 }
 
@@ -98,8 +144,22 @@ section {
   padding-top: 200%;
 }
 
+.evernote {
+  border-bottom: .1rem dotted #000000;
+  padding-bottom: 5%;
+}
+
+.google-drive {
+  padding: 5% 0;
+}
+
 .moodboard {
   padding-top: 2%;
+}
+
+.morpholio {
+  border-bottom: .1rem dotted #000000;
+  padding: 5% 0;
 }
 
 .pref-test {
@@ -384,10 +444,10 @@ p.left {
 
 /* Project.html only */
 h5[class*=p] {
-  color: #54494b;
+  color: ##20435D;
   font-family: "Quicksand",sans-serif;
-  font-weight: 500;
-  font-size: 150%;
+  font-size: 175%;
+  font-weight: 600;
   line-height: 130%;
   margin: 1rem 0 3rem 0;
   text-align: left;
@@ -469,10 +529,12 @@ ul.no-bullet {
 }
 
 .jeff {
+  border-bottom: .1rem solid #000000;
   margin: -447% 10%;
 }
 
 .jodi {
+  border-bottom: .1rem solid #000000;
   margin: -137% 10%;
 }
 
@@ -513,7 +575,7 @@ p[class="sg-num"] {
 }
 
 .patterns, .type, .color-palette, .logo-misuse, .voice {
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   border-radius: .25rem;
   padding: 2.5% 5%;
 }
@@ -594,6 +656,11 @@ p[class="sg-num"] {
   margin: -42% 0% 0% 30%;
 }
 
+.sg-head {
+  font-size: 200%;
+  font-weight: 600;
+}
+
 .sg-h1 {
   font-size: 449%;
   font-weight: 400;
@@ -635,11 +702,13 @@ p[class="sg-num"] {
 }
 
 .type {
+  border-bottom: .1rem dotted #20435D;
+  border-top: .1rem dotted #20435D;
   margin: 5% 0;
 }
 
 .type-guide {
-  background-color: #ffffff;
+  border-right: .1rem dotted #20435D;
   margin-top: 5%;
   padding: 2.5% 5% 2.5% 5%;
 }
@@ -924,6 +993,10 @@ ul.sub-title {
 }
 
 @media screen and (min-width: 1025px) {
+  .competitors, .conclusion, .final-logo, .hi-fi-mockup, .hi-fi-proto, .user-stories, .wireframe-sketches {
+      padding: 0 5% 5% 5%;
+  }
+
   .header {
     background-color: #20435D;
     margin: 0 auto;
@@ -940,7 +1013,6 @@ ul.sub-title {
     background-color: #C0D5C9;
   }
 
-
   h3.intro {
     font-size: 235%;
     font-weight: 500;
@@ -953,6 +1025,18 @@ ul.sub-title {
 
   h5 {
     text-align: left;
+  }
+
+  h5[class="p-brain"] {
+    padding-bottom: 130%;
+  }
+
+  h5[class="p-mood"] {
+    padding-bottom: 60%;
+  }
+
+  h5[class="p-persona"] {
+    padding-bottom: 300%;
   }
 
   li {
@@ -1009,7 +1093,13 @@ ul.sub-title {
   }
 
   p.sub-head {
-    font-size: 180%;
+    font-size: 200%;
+    font-weight: 400;
+    margin: 0 0 3% 0;
+  }
+
+  .sg-h4 {
+    font-size: 200%;
   }
 
   ul.sub-title {
@@ -1017,7 +1107,18 @@ ul.sub-title {
   }
 
   .brainstorm {
-    padding-top: 175%;
+    padding-top: 0%;
+  }
+
+  .brett {
+    margin: -107% 8%;
+  }
+
+  .color-palette {
+    float: left;
+    overflow: auto;
+    padding: 2.5% 2% 2.5% 0%;
+    width: 48%;
   }
 
   .foot {
@@ -1033,20 +1134,71 @@ ul.sub-title {
     margin: 4.55% 0 0 0;
   }
 
+  .goal, .bio {
+    margin: 5% 0;
+  }
+
+  img.brain1, .brain2, .brain3 {
+    width: 45%;
+  }
+
+  img.brain1 {
+    margin: -117% 0 0 0;
+  }
+
+  img.brain2 {
+    margin: -86% 0 0 46%;
+  }
+
   img.brain3 {
-    margin: -73% 0 0 -2%;
+    margin: -60% 0 0 0%;
+  }
+
+  .jeff {
+    margin: -302% 8%;
+  }
+
+  .jodi {
+      margin: -203% 8%;
+  }
+
+  .logo {
+    margin: 1% 33%;
+    width: 35%;
+  }
+
+  .logo-misuse {
+    float: right;
+    margin-bottom: 11%;
+    overflow: auto;
+    width: 48%;
   }
 
   .moodboard, .prototype {
-    padding-top: 50%;
+    padding-top: 5%;
   }
 
   .my-intro {
     background-color: #E57A5B;
   }
 
-  .pref-test {
-    padding-top: 200%;
+  .patterns {
+    float: right;
+  }
+
+  .patterns, .type {
+    margin: 5% 0%;
+    padding: 2.5% 0;
+    overflow: auto;
+    width: 32%;
+  }
+
+  .pref-desk1 {
+    margin: -257% 0 0 0;
+  }
+
+  .pref-desk2 {
+    margin: -209% 0% 0 19%;
   }
 
   .pref-mob2 {
@@ -1057,6 +1209,37 @@ ul.sub-title {
     margin: -55% 0 0 47%;
   }
 
+  .proto1 {
+    margin: -74% 0 0 0%;
+  }
+
+  .proto2 {
+    margin: -33% 0% 0% 30%;
+  }
+
   .tools {
     margin: 5% 5% 0% 5%;
   }
+
+  .type {
+    width: 100%;
+  }
+
+  .type-guide {
+
+    float: left;
+    overflow: auto;
+    padding: 2.5% 1% 2.5% 0%;
+    width: 64%;
+  }
+
+  .voice {
+    background-color: #ffffff;
+    width: 22%;
+  }
+
+  .wireframe {
+    width: 50%;
+  }
+
+}
