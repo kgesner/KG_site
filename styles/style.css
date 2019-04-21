@@ -381,11 +381,11 @@ body {
     }
 
     .jeff {
-      border-bottom: .1rem solid #000000;
+      border-bottom: .1rem dotted #000000;
     }
 
     .jodi {
-      border-bottom: .1rem solid #000000;
+      border-bottom: .1rem dotted #000000;
     }
 
     .goal {
