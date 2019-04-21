@@ -307,6 +307,19 @@ body {
 
 
   /* USER RESEARCH */
+    .card-body {
+      background-color: #c0d5c9;
+      border-radius: .25rem;
+      float: left;
+      margin: 1%;
+      padding: 2%;
+      width: 31%;
+    }
+
+    .results {
+      margin: 10% auto 130% auto;
+    }
+
     .research, .execution {
       background-color: #ffffff;
     }
@@ -550,21 +563,12 @@ body {
        margin: auto;
      }
 
-    .pref-desk1, .pref-desk2, .pref-desk3 {
-      width: 70%;
+    .pref-desk-img {
+      width: 100%;
     }
 
-    .pref-desk2 {
-      margin: 0% 0% 0 30%;
-    }
-
-    .pref-mob1, .pref-mob2, .pref-mob3, .pref-mob4, .pref-mob5 {
-      margin-top: 3%;
-      width: 30%;
-    }
-
-    .pref-mob4, .pref-mob5 {
-      margin: 0 auto;
+    .pref-mob-img {
+      width: 32%;
     }
 
     .prototype {
@@ -828,6 +832,10 @@ body {
   }
 
   /* RESEARCH */
+  .results {
+    margin: 10% auto 70% auto;
+  }
+
   img.flow {
     padding-bottom: 2%;
   }
@@ -922,12 +930,8 @@ body {
     }
 
   /* EXECUTION */
-  .pref-mob2 {
-    margin: 0% 0 0 0%;
-  }
-
-  .pref-mob4 {
-    margin: 0% 0 0 0%;
+  .pref-desk-img {
+    width: 49%;
   }
 
   .proto2 {
@@ -970,6 +974,7 @@ body {
   }
 
   h5 {
+    font-size: 200%;
     text-align: left;
   }
 
@@ -1085,6 +1090,10 @@ body {
     width: 50%;
   }
 
+  .results {
+    margin-bottom: 65%;
+  }
+
   /* PERSONAS */
   .brett {
     margin: 0% 8%;
@@ -1178,25 +1187,10 @@ body {
   }
 
   /* EXECUTION */
-  .pref-desk1 {
-    margin: -257% 0 0 0;
+  .pref-desktop {
+    margin: 1% auto;
   }
 
-  .pref-desk2 {
-    margin: -209% 0% 0 19%;
-  }
-
-  .pref-mob2 {
-    margin: -55% 0 0 10%;
-  }
-
-  .pref-mob4 {
-    margin: -55% 0 0 47%;
-  }
-
-  .proto2 {
-    margin: 0% 0% 0% 30%;
-  }
 
   /* FOOTER */
   .foot {
