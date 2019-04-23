@@ -40,6 +40,10 @@ body {
     width: 15%;
   }
 
+  img.kglogo {
+    width: 100%;
+  }
+
   li.projects, .resume{
     float: right;
     font-size: 150%;
@@ -160,6 +164,11 @@ body {
     text-align: left;
   }
 
+  img {
+    border-radius: .25rem;
+    width: 100%;
+  }
+
   li {
     color: #166D8C;
     font-family: "Futura PT", sans-serif;
@@ -255,32 +264,34 @@ body {
   font-size: 80%;
 }
 
+.bio-img {
+  margin: 0 .5%;
+  width: 31%;
+}
 
 /* PROJECT PAGE */
   /* OVERVIEW */
     .deliverables {
       float: right;
-      margin: -100% 0% 0% 0%;
+      margin: 0 0% 0% 0%;
       overflow: auto;
-      width: 33%;
+      width: 45%;
     }
 
     .role {
       float: left;
       margin: 0% 7% 5% 0%;
       overflow: auto;
-      width: 65%;
+      width: 45%;
     }
 
     .tools {
-      margin: 5% 0% 15% 0%;
       overflow: auto;
       width: 29%;
     }
 
     .solution {
       margin: 5% 0% 11% 0%;
-      overflow: auto;
       width: 100%;
     }
 
@@ -292,7 +303,6 @@ body {
 
     .problem {
       margin: 5% 0% 0% 0%;
-      overflow: auto;
       padding: 0 0 5% 0;
       width: 100%;
     }
@@ -317,11 +327,24 @@ body {
     }
 
     .results {
-      margin: 10% auto 130% auto;
+      margin: 10% auto 32% auto;
+    }
+
+    .card-percent {
+      color: #7C3840;
+      font-family: "Filson Soft";
+      font-size: 200%;
+      font-weight: 300;
     }
 
     .research, .execution {
       background-color: #ffffff;
+    }
+
+    img.competitor {
+      border-radius: .25rem;
+      margin: 1% 0%;
+      width: 15%;
     }
 
     .evernote {
@@ -384,6 +407,19 @@ body {
        margin: 0 12.5%;
      }
 
+    .prototype {
+       padding-top: 5%;
+    }
+
+    .proto1, .proto2 {
+       border-radius: .25rem;
+       width: 100%;
+    }
+
+    .proto2 {
+       margin: 0% 0% 0% 0%;
+    }
+
   /* PERSONAS */
     .bio {
       margin: 10% 0;
@@ -410,12 +446,29 @@ body {
     }
 
   /* BRANDING */
-    .brainstorm {
-      padding-top: 3%;
+
+    img.brain1, .brain2, .brain3 {
+      width: 48%;
+    }
+
+    img.brain2 {
+      margin: 0% 0 0 2%;
     }
 
     .moodboard {
       padding-top: 2%;
+    }
+
+    img.board2 {
+      border-radius: .25rem;
+      margin: 0% 0% 0% 6%;
+      width: 85%;
+    }
+
+    .logo {
+      border-radius: .25rem;
+      margin: 1% 25%;
+      width: 50%;
     }
 
 
@@ -441,6 +494,11 @@ body {
       text-align: center;
     }
 
+    .icon {
+      margin: 3% 1%;
+      width: 10%;
+    }
+
     .logo-misuse {
       border-bottom: .1rem dotted #20435D;
     }
@@ -460,7 +518,7 @@ body {
       text-align: center;
     }
 
-    .patterns, .type, .color-palette, .logo-misuse, .voice {
+    .patterns, .typography, .color-palette, .logo-misuse, .voice {
       /*background-color: #ffffff;*/
       border-radius: .25rem;
       padding: 2.5% 5%;
@@ -533,7 +591,7 @@ body {
       font-weight: 400;
     }
 
-    .type {
+    .typography {
       border-bottom: .1rem dotted #20435D;
       border-top: .1rem dotted #20435D;
       margin: 5% 0;
@@ -571,82 +629,14 @@ body {
       width: 32%;
     }
 
-    .prototype {
-      padding-top: 5%;
+    .hi-fi-1 {
+      border: .1rem solid #E6EEE9;
     }
 
-    .proto1, .proto2 {
-      border-radius: .25rem;
-      width: 60%;
+    .hifi-proto {
+      border: .1rem solid #E6EEE9;
     }
 
-    .proto2 {
-      margin: 0% 0% 0% 30%;
-    }
-
-
-  /* IMAGES */
-    img {
-      border-radius: .25rem;
-      width: 100%;
-    }
-
-    .image, .flow, .guide, .hifi-proto, .final  {
-      width: 100%;
-    }
-
-    img.kglogo {
-      width: 100%;
-    }
-
-
-  /* Project Images */
-    img.board2 {
-      border-radius: .25rem;
-      margin: 0% 0% 0% 6%;
-      width: 85%;
-    }
-
-    img.competitor {
-      border-radius: .25rem;
-      margin: 1% 0%;
-      width: 15%;
-    }
-
-    img.brain1, .brain2, .brain3 {
-      width: 60%;
-    }
-
-    img.brain2 {
-      margin: 0% 0 0 40%;
-    }
-
-    img.digs-home-page, .purple, .final, .flow, .guide, .hifi-proto, .wireframe {
-      border-radius: .25rem;
-      width: 100%;
-    }
-
-    img.hi-fi-1 {
-      border-radius: .25rem;
-      margin: 0 2%;
-        width: 90%;
-    }
-
-    .icon {
-      margin: 3% 1%;
-      width: 10%;
-    }
-
-    .logo {
-      border-radius: .25rem;
-      margin: 1% 25%;
-      width: 50%;
-    }
-
-    .image {
-      margin: 1%;
-      width: 30%;
-    }
 
   /* LEARNINGS */
 
@@ -687,7 +677,11 @@ body {
 @media screen and (min-width: 768px) {
   .view-button {
     font-size: 190%;
-    margin: 3% 40%;
+    margin: 5% 40%;
+  }
+
+  .view-button-sm {
+    margin: 5% 39%;
   }
 
   h1 {
@@ -728,8 +722,8 @@ body {
   h5 {
     color: #166D8C;
     font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 150%;
+    font-weight: 600;
+    font-size: 190%;
     line-height: 120%;
     margin: 2% 0%;
   }
@@ -817,23 +811,48 @@ body {
 
   /* OVERVIEW */
   .deliverables {
-    margin: -54% 0%;
+    float: left;
+    margin: 0% 4% 0 0;
+    width: 30%;
   }
 
   .role {
-    float: none;
-    margin: 5% 0%;
-    width: 49%;
+    margin: 0% 6% 0 0;
+    width: 30%;
   }
 
   .tools {
-    margin: 5% 0% 5% 0%;
-    width: 21%;
+    margin: 0% 0% 25% 0%;
+    width: 30%;
+  }
+
+  .problem, .solution {
+    margin: 0%;
+    overflow: unset;
+  }
+
+  .problem-main {
+    margin: 5% 4% 0% 0%;
   }
 
   /* RESEARCH */
+  .analysis {
+    margin: 48% 0 0 0;
+  }
+
   .results {
-    margin: 10% auto 70% auto;
+    margin: 10% auto 29% auto;
+  }
+
+  .strengths {
+    float: left;
+    margin: 0 7% 0 0%;
+    width: 48%;
+  }
+
+  .weaknesses {
+    margin: 0 0 0 52%;
+    width: 48%;
   }
 
   img.flow {
@@ -848,11 +867,34 @@ body {
     width: 35%;
   }
 
+  .goal {
+    float: left;
+    margin: 0%;
+    width: 48%;
+  }
+
+  .frustrate {
+    width: 48%;
+    margin: 0 10% 0 52%;
+  }
+
   .user-goals {
     padding: 4% 0 4% 0;
   }
 
+  .proto1, .proto2 {
+    width: 75%;
+  }
+
   /* BRANDING */
+  img.brain1, .brain2 {
+    width: 48%;
+  }
+
+  .brain2 {
+    margin: 0 2% 0 0;
+  }
+
   img.board2 {
     margin: 0% 0% 0% 8%;
   }
@@ -867,7 +909,7 @@ body {
     }
 
     .color-palette {
-      margin: 25% 0% 0 25%;
+      margin: 4% 0% 0 25%;
       width: 74%;
       padding: 0;
       border-bottom: none;
@@ -876,6 +918,12 @@ body {
     .e-logo {
       margin: 3% 1%;
       width: 21%;
+    }
+
+    .email-sig1 {
+      margin: 1% 5% 5% auto;
+      padding: 2.5% 0%;
+      width: 37%;
     }
 
     .logo {
@@ -896,7 +944,7 @@ body {
     }
 
     .patterns {
-      margin: 15% 4% 0 54%;
+      margin: 6% 4% 0 54%;
       padding: 2.5% 0% 2.5% 0%;
       width: 48%;
     }
@@ -906,7 +954,7 @@ body {
       width: 20%;
     }
 
-    .type {
+    .typography {
       border: none;
       float: left;
       margin-right: 5%;
@@ -922,11 +970,15 @@ body {
 
     .voice {
       border-top: none;
-      margin: 0% 0% 18% 50%;
+      margin: 0% 0% 0% 58%;
       overflow: auto;
-      padding: 2.5% 0;
+      padding: 2.5% 0 45% 0
+
+
+
+      ;
       text-align: left;
-      width: 43%;
+      width: 44%;
     }
 
   /* EXECUTION */
@@ -953,10 +1005,13 @@ body {
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .competitors, .conclusion, .final-logo, .hi-fi-mockup, .hi-fi-proto, .user-stories, .wireframe-sketches {
-      padding: 0 5% 5% 5%;
+@media screen and (min-width: 835px) {
+  .voice {
+    padding: 2.5% 0 21% 0;
   }
+}
+
+@media screen and (min-width: 1025px) {
 
   .view-button-sm {
     font-size: 160%;
@@ -1053,13 +1108,15 @@ body {
 
   /* OVERVIEW */
   .deliverables {
-    margin: -21% 0%;
-    width: 22%;
+    float: left;
+    margin: 0% 3% 0 0%;
+    width: 30%;
   }
 
   .problem {
-    margin: -32% 0% 0% 46%;
-    width: 62%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0 0 0%;
+    width: 100%;
   }
 
   .problem-main {
@@ -1067,13 +1124,15 @@ body {
   }
 
   .role {
-    margin: 0;
-    width: 34%;
+    float: left;
+    margin: 0 7% 0 0;
+    width: 30%;
   }
 
   .solution {
-    margin: 18% 0% 11% 0%;
-    width: 39%;
+    float: left;
+    margin: 0% 0% 5% 0%;
+    width: 100%;
   }
 
   .solution-main {
@@ -1081,30 +1140,39 @@ body {
   }
 
   .tools {
-    margin: -22% 0 0% 46%;
-    width: 16%;
+    margin: 0% 0 20% 0%;
+    width: 30%;
   }
 
   /* RESEARCH */
+  .analysis {
+    margin: 48% 0 0 0;
+  }
+
+
+  .goal {
+    float: left;
+    margin: 0%;
+    width: 48%;
+  }
+
+  .frustrate {
+    width: 48%;
+    margin: 0 10% 10% 55%;
+  }
+
   .wireframe {
     width: 50%;
+    margin: 5% 25%;
   }
 
   .results {
-    margin-bottom: 65%;
+    margin-bottom: 30%;
   }
 
   /* PERSONAS */
-  .brett {
-    margin: 0% 8%;
-  }
-
-  .jeff {
-    margin: 0% 8%;
-  }
-
-  .jodi {
-      margin: 0% 8%;
+  .user-goals {
+    padding: 0%;
   }
 
   /* BRANDING */
@@ -1134,13 +1202,13 @@ body {
     /* float: left; */
     margin: 25% 0% 0 0%;
     overflow: auto;
-    padding: 8% 0% 2.5% 3%;
-    width: 45%;
+    padding: 8% 0% 2.5% 0%;
+    width: 44%;
   }
 
   .email-sig1 {
     margin: 1% 1% 5% auto;
-    padding: 2.5% 5% 2.5% 2%;
+    padding: 2.5% 0% 2.5% 3%;
     width: 45%;
   }
 
@@ -1148,8 +1216,8 @@ body {
     /* float: right; */
     margin-bottom: 11%;
     overflow: auto;
-    padding: 2.5% 0% 2.5% 3%;
-    width: 45%;
+    padding: 2.5% 0% 2.5% 1%;
+    width: 44%;
   }
 
   .patterns {
@@ -1164,9 +1232,9 @@ body {
     font-size: 200%;
   }
 
-  .type {
-    margin: 5% 4% 5% 0;
-    padding: 2.5% 0;
+  .typography {
+    margin: 5% 8% 7% 0;
+    padding: 0%;
     overflow: auto;
     width: 48%;
   }
@@ -1182,7 +1250,7 @@ body {
   .voice {
     /*background-color: #ffffff;*/
     margin: 0 0% 0 56%;
-    padding: 2.5% 2.5% 25% 0%;
+    padding: 2.5% 2.5% 25% 3%;
     width: 38%;
   }
 
@@ -1198,7 +1266,7 @@ body {
   }
 
   .footer {
-    padding: 0 0 7% 0;
+    padding: 0%;
   }
 
   .footer-icon {
