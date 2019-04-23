@@ -201,6 +201,10 @@ body {
     list-style: none;
   }
 
+  .bold {
+    font-weight: 400;
+  }
+
   .no-style {
     list-style: none;
   }
@@ -645,7 +649,7 @@ body {
     .footer {
       /*background-color: #E8C4C1;
       grid-area: foot;*/
-      padding: 0 0 37% 0;
+      padding: 0 0 17% 0;
     }
 
     .foot {
@@ -1017,12 +1021,13 @@ body {
 
   h3{
     font-size: 275%;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 130%;
   }
 
   h4 {
-    font-size: 250%;
+    font-size: 225%;
+    font-weight: 300;
   }
 
   h5 {
