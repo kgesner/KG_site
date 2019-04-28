@@ -1,0 +1,71 @@
+
+    <!DOCTYPE html>
+      <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+      <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+      <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lazy Line Painter</title>
+        <meta name="description" content="A modern JS library for SVG path animation">
+
+        <!-- css  -->
+        <style>
+
+          body, html {
+            /*position: absolute;*/
+            width: 100%;
+            height: 100%;
+            /*top:0;
+            left:0;
+            margin: 0;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+            #kglogo-blue {
+              width: 70vw;
+              height: 70vh;
+              position: relative;
+              overflow: visible;
+            }
+        </style>
+
+        <!-- Include lazylinepainter -->
+        <script src="lazy-line-painter-1.9.6.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#kglogo-blue');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square"});
+                myAnimation.paint();
+              }
+            }
+
+          })();
+
+        </script>
+      </head>
+
+      <body>
+        <svg class="kg-logo" width="131" height="75" viewBox="0 0 131 177" fill="none" xmlns="http://www.w3.org/2000/svg" data-llp-composed="true" id="kglogo-blue" class="lazy-line-painter">
+<rect x="2" y="2" width="127" height="173" data-llp-id="kglogo-blue-0" data-llp-duration="500" data-llp-delay="0" fill-opacity="0" style=""/>
+<path d="M19.7898 12.9055V121.464L39.0622 100.397M58.3345 79.3296L39.0622 100.397M39.0622 100.397C41.533 107.419 50.1314 121.464 64.7587 121.464" data-llp-id="kglogo-blue-1" data-llp-duration="500" data-llp-delay="500" fill-opacity="0" style=""/>
+<path d="M105.5 99C105.5 114 92.5 119.81 84.5 120C74.5 120.238 62.8451 113.5 62.5 99C62.1548 84.5 73 76.5 83.5 76.5C92.4999 76.5 105.5 82.5 105.5 99Z" data-llp-id="kglogo-blue-2" data-llp-duration="500" data-llp-delay="1000" fill-opacity="0" style=""/>
+<path d="M105.775 79.3296V140.301C105.775 170.043 64.265 171.53 64.265 140.301" data-llp-id="kglogo-blue-3" data-llp-duration="500" data-llp-delay="1500" fill-opacity="0" style=""/>
+</svg>
+      </body>
+    </html>

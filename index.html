@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kathryn Gesner</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="https://use.typekit.net/fxr1cda.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathryn Gesner</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fxr1cda.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
 
   <body class="container">
     <header class="header">
+      <a href="index.html">
+        <svg class="kglogo" width="127" height="75" viewBox="0 0 127 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1.5" y="1.5" width="124" height="170" stroke="#20435D" stroke-width="3"/>
+        <path d="M17.7898 10.9055V119.464L37.0622 98.397M56.3345 77.3296L37.0622 98.397M37.0622 98.397C39.533 105.419 48.1314 119.464 62.7587 119.464" stroke="#20435D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M103.5 97C103.5 112 90.5 117.81 82.5 118C72.5 118.238 60.8451 111.5 60.5 97C60.1548 82.5 71 74.5 81.5 74.5C90.4999 74.5 103.5 80.5 103.5 97Z" stroke="#20435D" stroke-width="3"/>
+        <path d="M103.775 77.3296V138.301C103.775 168.043 62.265 169.53 62.265 138.301" stroke="#20435D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
       <nav>
-        <ul>
-          <li class="kg-logo"><a href="index.html"><img src="images/kg-logo-blue.svg" class="kglogo" alt="logo"></a></li>
-          <!--<li class="name"><a href="index.html" class="navbar">Kathryn Gesner</a></li>-->
-          <li class="resume"><a href="resume.pdf" target="_blank" class="navbar">Resume</a></li>
-          <li class="about"><a href="bio.html" class="navbar">About</a></li>
-          <li class="projects"><a href="project.html" class="navbar">Projects</a></li>
-        </ul>
+          <a href="project.html" class="navbar">Projects</a>
+          <a href="bio.html" class="navbar">About</a>
+          <a href="resume.pdf" target="_blank" class="navbar">Resume</a>
       </nav>
     </header>
 
     <!-- INTRO -->
     <section class="my-intro">
       <h1>Hey,</h1>
-      <h1>I'm <span class="bold">Kathryn</span>.</h1>
-      <h2> >> UX Designer </h2>
-      <h2> >> Visual Artist & Merchandiser</h2>
-      <h2> >> Passionate about branding</h2>
-      <h2> >> MA via CA</h2>
+      <h1>I'm <b class="red">Kathryn</b>.</h1>
+      <h2> >> UX <b class="blue">Designer</b></h2>
+      <h2> >> Visual Artist <b class="blue">& Merchandiser</b></h2>
+      <h2> >> Passionate <b class="blue">about branding</b></h2>
+      <h2> >> MA <b class="blue">via CA</b></h2>
     </section>
 
     <!-- FEATURED PROJECTS -->
@@ -39,8 +45,7 @@
       <div class="project">
         <img src="images/home-page.jpg" class="digs-home-page" alt="digs-home">
         <h3>Digs</h3>
-        <p>Digs helps you make the most of your decor dreams with features tailored specifically to your design needs.</p>
-        <button onClick="window.location.href = 'project.html'" type="button" name="view" class="view-button"><a href="project.html">check it out</button></a>
+        <p class="left">Digs helps you make the most of your decor dreams with features tailored specifically to your design needs.</p>
 
         <div class="problem-main">
           <h4>Problem</h4>
@@ -56,21 +61,27 @@
           </ul>
         </div>
 
+        <button onClick="window.location.href = 'project.html'" type="button" name="view" class="view-button"><a href="project.html">check it out</button></a>
+
       </div>
 
-      </section>
+    </section>
 
     <footer class="footer">
-      <div class="foot">
-        <ul>
-          <li class="footer-icon"><a href="mailto:kathryn.gesner@gmail.com" target="_blank"><img src="images/email-icon.svg" alt="Email" style="width: 3rem;"></a></li>
-          <li class="footer-icon"><a href="http://linkedin.com/in/kgesner" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn" style="width: 3rem;"></a></li>
-          <li class="footer-icon"><a href="https://www.pinterest.com/phantomwombats/" target="_blank"><img src="images/pinterest-icon.svg" alt="Pinterest" style="width: 3rem;"></a></li>
-          <!--<li class="footer-logo-1"><a href="index.html"><img src="images/k-logo.svg" alt="logo" style="width: 3rem;"></a></li>-->
-        </ul>
+      <nav>
+        <a href="mailto:kathryn.gesner@gmail.com" target="_blank" class="navbar"><img src="images/email-icon.svg" alt="Email" style="width: 3rem;"></a>
+        <a href="http://linkedin.com/in/kgesner" target="_blank" class="navbar"><img src="images/linkedin-icon.svg" alt="LinkedIn" style="width: 3rem;"></a>
+        <a href="https://www.pinterest.com/phantomwombats/" target="_blank" class="navbar"><img src="images/pinterest-icon.svg" alt="Pinterest" style="width: 3rem;"></a>
+      </nav>
+      <div class="foot-logo">
+        <p class="footer-logo-2">© 2019 Kathryn Gesner</p>
+        <a href="index.html">
+          <svg width="33" height="53" viewBox="0 0 33 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="31.1029" height="52" stroke="#20435D"/>
+          <path d="M6.78711 4.14771V45.44L14.1405 37.4266M21.4939 29.4133L14.1405 37.4266M14.1405 37.4266C15.0833 40.0978 18.364 45.44 23.9451 45.44" stroke="#20435D" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
-
-      <p class="footer-logo-2">© Kathryn Gesner 2019</p>
     </footer>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
