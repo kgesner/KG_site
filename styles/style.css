@@ -985,6 +985,7 @@ body {
 
   header {
     margin: 1%;
+    max-width: 1000px;
     padding: 1% 1% 1% 1%;
     width: 8%;
   }
