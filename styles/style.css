@@ -97,6 +97,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .button-padding {
+    padding: 20px 0;
+  }
+
 /* TEXT STYLES */
   a {
     color: #0f4b61;
@@ -257,6 +261,7 @@ body {
   }
 
   .foot-logo {
+    align-items: baseline;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 11px;
@@ -661,6 +666,11 @@ body {
 
   .view-button-sm {
     margin: 5% 0%;
+  }
+
+  .button-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
   }
 
   h1 {
