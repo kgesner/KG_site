@@ -10,35 +10,40 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-  <body class="container">
-    <header class="header">
-      <a href="index.html">
+<body class="container">
+  <header class="header">
+    <a href="index.html">
         <svg class="kglogo" width="127" height="75" viewBox="0 0 127 150" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1.5" y="1.5" width="124" height="170" stroke="#20435D" stroke-width="3"/>
         <path d="M17.7898 10.9055V119.464L37.0622 98.397M56.3345 77.3296L37.0622 98.397M37.0622 98.397C39.533 105.419 48.1314 119.464 62.7587 119.464" stroke="#20435D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M103.5 97C103.5 112 90.5 117.81 82.5 118C72.5 118.238 60.8451 111.5 60.5 97C60.1548 82.5 71 74.5 81.5 74.5C90.4999 74.5 103.5 80.5 103.5 97Z" stroke="#20435D" stroke-width="3"/>
         <path d="M103.775 77.3296V138.301C103.775 168.043 62.265 169.53 62.265 138.301" stroke="#20435D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-      </a>
+    </a>
 
-      <nav>
-       <div class="dropdown">
-         <a href="#dropdown-content" class="navbar">Projects</a>
-         <div class="dropdown-content">
-           <a href="digs.html" class="navbar">Digs</a>
-           <a href="the-e-c.html" class="navbar">The Exquisite Corpse</a>
-         </div>
+    <nav>
+      <div class="dropdown">
+       <a href="#dropdown-content" class="nav">Projects</a>
+       <div class="dropdown-content">
+         <a href="digs.html" class="nav">Digs</a>
+         <a href="project2.html" class="nav">The Exquisite Corpse</a>
        </div>
-         <a button="bio.html" class="navbar">About</button>
-         <a button="resume.pdf" target="_blank" class="navbar">Resume</button>
-      </nav>
-    </header>
+      </div>
+        <a button="bio.html" class="nav">About</a>
+        <a button="resume.pdf" target="_blank" class="nav">Resume</a>
+    </nav>
+  </header>
 
-    <!-- OVERVIEW -->
-    <section class="overview">
-      <div class="digs">
-        <img src="images/home-page.jpg" class="digs-home-page" alt="digs-home">
-        <div class="overview-grid">
+  <!-- OVERVIEW -->
+  <section>
+    <div class="summary">
+      <img src="images/home-page.jpg" class="image-100p" alt="digs-home">
+      <div class="summary">
+        <div class="image">
+          <img src="" alt="">
+        </div>
+
+        <div class="summary-grid">
           <h3>Digs</h3>
           <p>Helping make your decor dreams a reality.</p>
         </div>
@@ -49,8 +54,8 @@
           <br>
         </div>
 
-        <div class="info">
-          <div class="info-list">
+        <div class="summary-lists">
+          <div class="summary-list">
             <h4>Role</h4>
             <ul>
               <li>UX Researcher</li>
@@ -62,8 +67,8 @@
             </ul>
           </div>
 
-          <div class="info-list">
-            <h4 class="deliver">Deliverables</h4>
+          <div class="summary-list">
+            <h4>Deliverables</h4>
             <ul>
               <li>User Surveys & Personas</li>
               <li>Competitive Analysis</li>
@@ -75,7 +80,7 @@
             </ul>
           </div>
 
-          <div class="info-list">
+          <div class="summary-list">
             <h4>Tools</h4>
             <ul>
               <li>Google Forms</li>
@@ -85,7 +90,7 @@
             </ul>
           </div>
 
-          <div class="info-list">
+          <div class="summary-list">
             <h4>Duration</h4>
             <ul>
               <li>2.5 months</li>
@@ -93,306 +98,304 @@
           </div>
         </div>
 
-        <div class="solution">
+        <div class="summary-solution">
           <h4>What is Digs?</h4>
           <p class="left">Digs is the solution to a lack of purely home decor related platforms.</p>
         </div>
 
-        <div class="problem">
+        <div class="summary-problem">
           <h4>The Problem</h4>
           <p class="left">Home decor has become a massive industry due to several factors like HGTV, DIY bloggers, and influencers. There are sites that can be used for home decor and DIY, but nothing that has been tailored specifically for this particular user or experience.</p>
         </div>
 
       </div>
-    </section>
+  </section>
 
-    <!-- RESEARCH -->
-    <section class="research">
-      <h2 class="left">Research</h2>
-      <br>
-      <div class="survey block">
-        <h4 class="border">User Survey</h4>
-        <div class="questions">
-          <p class="left">A survey was created to research the habits and interests used by a millenial targeted audience.</p>
-          <p class="left">The questions were used to focus on which features are most important, and what features in existing products could be improved on.</p>
+  <!-- RESEARCH -->
+  <section>
+    <h2 class="left">Research</h2>
+    <br>
+    <div class="survey block">
+      <h4 class="border">User Survey</h4>
+      <div class="questions">
+        <p class="left">A survey was created to research the habits and interests used by a millenial targeted audience.</p>
+        <p class="left">The questions were used to focus on which features are most important, and what features in existing products could be improved on.</p>
+        <ul>
+          <li>Level of familiarity with cloud storage.</li>
+          <li>Which features are preferred.</li>
+          <li>Level of familiarity with Pinterest.</li>
+          <li>Interest in a site for specifically home decor related projects.</li>
+          <li>Preferred methods for sharing and collaboration.</li>
+        </ul>
+      </div>
+
+      <div class="results">
+        <h5>Survey Results</h5>
+        <div class="cards">
+          <div class="card-body">
+            <p class="card-percent">82%</p>
+            <p class="card">collaborate with family members.</p>
+          </div>
+
+          <div class="card-body">
+            <p class="card-percent">68%</p>
+            <p class="card">collaborate with coworkers.</p>
+          </div>
+
+          <div class="card-body">
+            <p class="card-percent">59.1%</p>
+            <p class="card">want to be able to create files.</p>
+          </div>
+
+          <div class="card-body">
+            <p class="card-percent">58.8%</p>
+            <p class="card">have used Pinterest</p>
+          </div>
+
+          <div class="card-body">
+            <p class="card-percent">41.2%</p>
+            <p class="card">feel existing products have unfair pricing structures.</p>
+          </div>
+
+          <div class="card-body">
+            <p class="card-percent">60%</p>
+            <p class="card">said favorite Pinterest feature is the large quantity of content.</p>
+          </div>
+        </div>
+
+        <div class="analysis">
           <ul>
-            <li>Level of familiarity with cloud storage.</li>
-            <li>Which features are preferred.</li>
-            <li>Level of familiarity with Pinterest.</li>
-            <li>Interest in a site for specifically home decor related projects.</li>
-            <li>Preferred methods for sharing and collaboration.</li>
+            <li>Need the ability to collaborate.</li>
+            <li>Prefer a reasonable pricing structure, including a free option.</li>
+            <li>Enjoy access to a wide range of content.</li>
           </ul>
         </div>
+      </div>
+    </div>
 
-        <div class="results">
-          <h5>Survey Results</h5>
-          <div class="cards">
-            <div class="card-body">
-              <p class="card-percent">82%</p>
-              <p class="card">collaborate with family members.</p>
+    <div class="competition block">
+      <h4 class="p-comp border">Competitors</h4>
+        <div class="evernote">
+          <img src="images/Digs/evernote.png" class="competitor" alt="evernote">
+          <h5>Evernote</h5>
+          <div class="competitors">
+            <div class="strengths">
+              <p class="left blue">Strengths</p>
+                <ul>
+                  <li>Straightforward, well explained onboarding process</li>
+                  <li>Compatible with Google</li>
+                  <li>Easy to save various elements from web browser (images, text, snapshots, etc)</li>
+                  <li>Easy to add photos, create lists (numbered, bulleted, even have functional checkbox that can be added in anywhere)</li>
+                  <li>Web site is very informative (includes plan comparison with list of features available on each)</li>
+                </ul>
             </div>
 
-            <div class="card-body">
-              <p class="card-percent">68%</p>
-              <p class="card">collaborate with coworkers.</p>
+            <div class="weaknesses">
+              <p class="left blue">Weaknesses</p>
+              <ul>
+                <li>Frequent user complaints of glitches with newer versions (crashing, unnecessary password prompts, loss of all saved data with update)</li>
+                <li>Recent changes in executives at the company, combined with potential financial concerns and changed branding/pricing have put Evernote in a less than positive light in the news and with its long time users</li>
+                <li>User complaints about sub-par customer service support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="morpholio">
+          <img src="images/Digs/morpholio.jpg" class="competitor" alt="morpholio-board">
+          <h5>Morpholio Board</h5>
+          <div class="competitors">
+            <div class="strengths">
+              <p class="left blue">Strengths</p>
+                <ul>
+                  <li>Wide variety of useful features (real world color selection tool, ability to grab images from searched for in web browser, intuitive controls)</li>
+                  <li>Offers free version (though it seems mostly to tempt users into purchasing the pro version)</li>
+                  <li>Nothing else like it currently exists in the phone tablet app market</li>
+                  <li>Seems like pro version includes ability to create spec books/automatically produced spreadsheets for cost analysis/ordering (to give clients etc)</li>
+                </ul>
             </div>
 
-            <div class="card-body">
-              <p class="card-percent">59.1%</p>
-              <p class="card">want to be able to create files.</p>
-            </div>
-
-            <div class="card-body">
-              <p class="card-percent">58.8%</p>
-              <p class="card">have used Pinterest</p>
-            </div>
-
-            <div class="card-body">
-              <p class="card-percent">41.2%</p>
-              <p class="card">feel existing products have unfair pricing structures.</p>
-            </div>
-
-            <div class="card-body">
-              <p class="card-percent">60%</p>
-              <p class="card">said favorite Pinterest feature is the large quantity of content.</p>
+            <div class="weaknesses">
+              <p class="left blue">Weaknesses</p>
+              <ul>
+                <li>Lack of clarity regarding how to use the app (walk through is vague and difficult to understand, website is sparse on details/relevant information, videos are choppy and don’t provide much actual content or insight into how the app functions)</li>
+                <li>App can be glitchy - many user complaints of app freezing during onboarding</li>
+                <li>Limited compatibility with other apps/sites due to not having been on market very long</li>
+                <li>Icons aren’t as intuitive as a user might like - difficult to know what a button might do before you tap it</li>
+              </ul>
             </div>
           </div>
 
-            <div class="analysis">
+        </div>
+
+        <div class="google-drive">
+          <img src="images/Digs/google-drive-icon.png" class="competitor" alt="google-drive">
+          <h5>Google Drive</h5>
+          <div class="competitors">
+            <div class="strengths">
+              <p class="left blue">Strengths</p>
               <ul>
-                <li>Need the ability to collaborate.</li>
-                <li>Prefer a reasonable pricing structure, including a free option.</li>
-                <li>Enjoy access to a wide range of content.</li>
+                <li>Wide range of features available - ability to create word docs, spreadsheets, slideshows, surveys, etc.</li>
+                <li>Compatible with hundreds of other apps, including Google products (Gmail, Google calendar, etc)</li>
+                <li>Intuitive user experience, easy to understand and use, simple/clean design that mimics how files are organized on a desktop</li>
+                <li>Easy collaboration with other users</li>
+                <li>Offers 15 GB free</li>
               </ul>
             </div>
+
+            <div class="weaknesses">
+              <p class="left blue">Weaknesses</p>
+              <ul>
+                <li>Ongoing security concerns regarding how data is collected and used</li>
+                <li>Number of options available can overwhelm users</li>
+                <li>Doesn’t offer any password protection - if something is shared via a link, anyone with that link can access your file</li>
+                <li>Docs/Sheets are not as robust as Microsoft Office</li>
+                <li>Paid options are not as competitive</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="block">
+      <h4 class="p-persona border">User Personas</h4>
+
+      <div class="persona block">
+        <img src="images/Digs/jeff.jpg" class="personas" alt="jeff">
+        <div class="about">
+          <h5>Jeff Schmidt</h5>
+            <ul>
+              <li><b class="blue">Age:</b> 58</li>
+              <li><b class="blue">Occupation:</b> Retired</li>
+              <li><b class="blue">Location:</b> Burlington, VT</li>
+              <li><b class="blue">User Type:</b> Convenience</li>
+            </ul>
+          </div>
+
+          <div class="goal">
+            <h5 class="blue">Goals</h5>
+            <ul>
+              <li>Doesn’t want to seek anything out or do research on new technologies</li>
+              <li>Keep in touch with friends and family</li>
+              <li>Back up mobile phone images to computer </li>
+              <li>Not get bogged down with dozens of different phone apps</li>
+            </ul>
+          </div>
+
+          <div class="frustrate">
+            <h5 class="blue">Frustrations</h5>
+            <ul>
+              <li>Too many products on the market that make it difficult to find anything he might actually be interested in</li>
+              <li>Doesn’t trust anything that isn’t saved to his computer hard drive</li>
+              <li>Prefers one app to do everything, instead of several seperate services.</li>
+            </ul>
+          </div>
+
+          <div class="motive">
+            <h5 class="blue">Motivations</h5>
+            <p class="left">Jeff has a smart phone and a home computer, which he mostly uses for email and calling his family. He doesn’t care much for the newest products in technology and generally upgrades when one of his kids gives him their year old model. He uses a cloud sharing service that came already set up on the phone, but only to download photos from his phone to his home computer.</p>
+          </div>
+
+          <div class="bio">
+            <h5 class="blue">Bio</h5>
+            <p class="left">Jeff is a pretty easy going guy who likes to spend time with his family and have a couple beers with the guys. He watches football, but doesn’t care about streaming it anywhere beyond his television, and gets frustrated when his children can’t put their phones down for ten minutes to have a face to face conversation. He retired early and coaches the local little league in the evenings and on weekends. He loves playing with his golden retriever and taking walks in the evening with his wife. </p>
+          </div>
+        </div>
+
+        <div class="persona block">
+          <img src="images/Digs/jodi.jpg" class="personas" alt="jodi">
+
+          <div class="about">
+            <h5>Jodi Fowler</h5>
+            <ul>
+              <li><b class="blue">Age:</b> 45</li>
+              <li><b class="blue">Occupation:</b> Stay at home mom</li>
+              <li><b class="blue">Location:</b> Nashville, TN</li>
+              <li><b class="blue">User Type:</b> Personal</li>
+            </ul>
+          </div>
+
+          <div class="goal">
+            <h5 class="blue">Goals</h5>
+            <ul>
+              <li>Mobility between home computer and mobile phone</li>
+              <li>Easy to share with friends and family</li>
+              <li>Help keeping track of daily activities/tasks</li>
+              <li>Streamlined ability to save content/tasks</li>
+            </ul>
+          </div>
+
+          <div class="frustrate">
+            <h5 class="blue">Frustrations</h5>
+            <ul>
+              <li>Inability to easily share content</li>
+              <li>Too many steps involved in saving content</li>
+              <li>Inaccessible on mobile or desktop</li>
+            </ul>
+          </div>
+
+          <div class="motive">
+            <h5 class="blue">Motivations</h5>
+            <p class="left">Jodi is a stay at home mom who uses sharing services to send things to her tight knit group of friends and family. She likes to make to do lists for her kids activities, make meal plans, share aspirational images and photos of her family. She mostly does this from home, but likes to have access from her mobile phone as well, when she’s on the go for her kids’ activities or a family outing.</p>
+          </div>
+
+          <div class="bio">
+            <h5 class="blue">Bio</h5>
+            <p class="left">Jodi has a full time job of taking care of her three children, ages 8 - 14. Between kids activities, planning meals, taking care of the house and shuttling everyone to their respective activities, she has little time for herself and looks for services that can help her manage time. When she has a moment to herself, she likes to save recipes, share pictures with her friends and family, and relax on the couch with the family cat.</p>
+          </div>
+        </div>
+
+        <div class="persona block">
+          <img src="images/Digs/brett.jpg" class="personas" alt="brett">
+
+          <div class="about">
+            <h5>Brett Jones</h5>
+            <ul>
+              <li><b class="blue">Age:</b> 35</li>
+              <li><b class="blue">Occupation:</b> Insurance</li>
+              <li><b class="blue">Location:</b> NYC</li>
+              <li><b class="blue">User Type:</b> Professional</li>
+            </ul>
+          </div>
+
+          <div class="goal">
+            <h5 class="blue">Goals</h5>
+            <ul>
+              <li>Accessibility from all devices.</li>
+              <li>Easy collaboration with coworkers</li>
+              <li>Updates in real time</li>
+              <li>Staying in tip top shape</li>
+            </ul>
+          </div>
+
+          <div class="frustrate">
+            <h5 class="blue">Frustrations</h5>
+            <ul>
+              <li>Not knowing what is going on in the office</li>
+              <li>Unreponsive coworkers</li>
+              <li>Slow internet connections</li>
+              <li>Flat bicycle tires</li>
+            </ul>
+          </div>
+
+          <div class="motive">
+            <h5 class="blue">Motivations</h5>
+            <p class="left">Brett loves his job and is 100% dedicated to being the best and most efficient worker. He travels for work fairly often, but also prefers to be connected and know what is going in the office 24/7. He loves bouncing ideas around with his coworkers and is always looking for the best resources to make communication around the office as seamless as possible, regardless of a person’s physical presence.</p>
+          </div>
+
+          <div class="bio">
+            <h5 class="blue">Bio</h5>
+            <p class="left">Brett is a workaholic. He spends most of his time working or thinking about work. In what little free time he has that isn’t devoted to work, he likes to ride his bicycle all over the city to stay in good shape. You have to stay in shape to keep your mind sharp, plus it gives him more free time to think about work! He also visits his family four times a year so his PTO doesn’t expire.</p>
+          </div>
         </div>
       </div>
 
-      <div class="competition block">
-        <h4 class="p-comp border">Competitors</h4>
-          <div class="evernote">
-            <img src="images/Digs/evernote.png" class="competitor" alt="evernote">
-            <h5>Evernote</h5>
-            <div class="competitors">
-              <div class="strengths">
-                <p class="left blue">Strengths</p>
-                  <ul>
-                    <li>Straightforward, well explained onboarding process</li>
-                    <li>Compatible with Google</li>
-                    <li>Easy to save various elements from web browser (images, text, snapshots, etc)</li>
-                    <li>Easy to add photos, create lists (numbered, bulleted, even have functional checkbox that can be added in anywhere)</li>
-                    <li>Web site is very informative (includes plan comparison with list of features available on each)</li>
-                  </ul>
-              </div>
-
-              <div class="weaknesses">
-                <p class="left blue">Weaknesses</p>
-                <ul>
-                  <li>Frequent user complaints of glitches with newer versions (crashing, unnecessary password prompts, loss of all saved data with update)</li>
-                  <li>Recent changes in executives at the company, combined with potential financial concerns and changed branding/pricing have put Evernote in a less than positive light in the news and with its long time users</li>
-                  <li>User complaints about sub-par customer service support</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="morpholio">
-            <img src="images/Digs/morpholio.jpg" class="competitor" alt="morpholio-board">
-            <h5>Morpholio Board</h5>
-            <div class="competitors">
-              <div class="strengths">
-                <p class="left blue">Strengths</p>
-                  <ul>
-                    <li>Wide variety of useful features (real world color selection tool, ability to grab images from searched for in web browser, intuitive controls)</li>
-                    <li>Offers free version (though it seems mostly to tempt users into purchasing the pro version)</li>
-                    <li>Nothing else like it currently exists in the phone/tablet app market</li>
-                    <li>Seems like pro version includes ability to create spec books/automatically produced spreadsheets for cost analysis/ordering (to give clients etc)</li>
-                  </ul>
-              </div>
-
-              <div class="weaknesses">
-                <p class="left blue">Weaknesses</p>
-                <ul>
-                  <li>Lack of clarity regarding how to use the app (walk through is vague and difficult to understand, website is sparse on details/relevant information, videos are choppy and don’t provide much actual content or insight into how the app functions)</li>
-                  <li>App can be glitchy - many user complaints of app freezing during onboarding</li>
-                  <li>Limited compatibility with other apps/sites due to not having been on market very long</li>
-                  <li>Icons aren’t as intuitive as a user might like - difficult to know what a button might do before you tap it</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="google-drive">
-            <img src="images/Digs/google-drive-icon.png" class="competitor" alt="google-drive">
-            <h5>Google Drive</h5>
-            <div class="competitors">
-              <div class="strengths">
-                <p class="left blue">Strengths</p>
-                  <ul>
-                    <li>Wide range of features available - ability to create word docs, spreadsheets, slideshows, surveys, etc.</li>
-                    <li>Compatible with hundreds of other apps, including Google products (Gmail, Google calendar, etc)</li>
-                    <li>Intuitive user experience, easy to understand and use, simple/clean design that mimics how files are organized on a desktop</li>
-                    <li>Easy collaboration with other users</li>
-                    <li>Offers 15 GB free</li>
-                  </ul>
-              </div>
-
-              <div class="weaknesses">
-                <p class="left blue">Weaknesses</p>
-                <ul>
-                  <li>Ongoing security concerns regarding how data is collected and used</li>
-                  <li>Number of options available can overwhelm users</li>
-                  <li>Doesn’t offer any password protection - if something is shared via a link, anyone with that link can access your file</li>
-                  <li>Docs/Sheets are not as robust as Microsoft Office</li>
-                  <li>Paid options are not as competitive</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-      <div class="user-goals block">
-          <h4 class="p-persona border">User Personas</h4>
-
-          <div class="persona block">
-            <img src="images/Digs/jeff.jpg" class="personas" alt="jeff">
-            <div class="about">
-              <h5>Jeff Schmidt</h5>
-              <ul>
-                <li><b class="blue">Age:</b> 58</li>
-                <li><b class="blue">Occupation:</b> Retired</li>
-                <li><b class="blue">Location:</b> Burlington, VT</li>
-                <li><b class="blue">User Type:</b> Convenience</li>
-              </ul>
-
-            </div>
-
-            <div class="goal">
-              <h5 class="blue">Goals</h5>
-              <ul>
-                <li>Doesn’t want to seek anything out or do research on new technologies</li>
-                <li>Keep in touch with friends and family</li>
-                <li>Back up mobile phone images to computer </li>
-                <li>Not get bogged down with dozens of different phone apps</li>
-              </ul>
-            </div>
-
-            <div class="frustrate">
-              <h5 class="blue">Frustrations</h5>
-              <ul>
-                <li>Too many products on the market that make it difficult to find anything he might actually be interested in</li>
-                <li>Doesn’t trust anything that isn’t saved to his computer hard drive</li>
-                <li>Prefers one app to do everything, instead of several seperate services.</li>
-              </ul>
-            </div>
-
-            <div class="motive">
-              <h5 class="blue">Motivations</h5>
-              <p class="left">Jeff has a smart phone and a home computer, which he mostly uses for email and calling his family. He doesn’t care much for the newest products in technology and generally upgrades when one of his kids gives him their year old model. He uses a cloud sharing service that came already set up on the phone, but only to download photos from his phone to his home computer.</p>
-            </div>
-
-            <div class="bio">
-              <h5 class="blue">Bio</h5>
-              <p class="left">Jeff is a pretty easy going guy who likes to spend time with his family and have a couple beers with the guys. He watches football, but doesn’t care about streaming it anywhere beyond his television, and gets frustrated when his children can’t put their phones down for ten minutes to have a face to face conversation. He retired early and coaches the local little league in the evenings and on weekends. He loves playing with his golden retriever and taking walks in the evening with his wife. </p>
-            </div>
-          </div>
-
-          <div class="persona block">
-            <img src="images/Digs/jodi.jpg" class="personas" alt="jodi">
-
-            <div class="about">
-              <h5>Jodi Fowler</h5>
-              <ul>
-                <li><b class="blue">Age:</b> 45</li>
-                <li><b class="blue">Occupation:</b> Stay at home mom</li>
-                <li><b class="blue">Location:</b> Nashville, TN</li>
-                <li><b class="blue">User Type:</b> Personal</li>
-              </ul>
-
-            </div>
-
-            <div class="goal">
-              <h5 class="blue">Goals</h5>
-              <ul>
-                <li>Mobility between home computer and mobile phone</li>
-                <li>Easy to share with friends and family</li>
-                <li>Help keeping track of daily activities/tasks</li>
-                <li>Streamlined ability to save content/tasks</li>
-              </ul>
-            </div>
-
-            <div class="frustrate">
-              <h5 class="blue">Frustrations</h5>
-              <ul>
-                <li>Inability to easily share content</li>
-                <li>Too many steps involved in saving content</li>
-                <li>Inaccessible on mobile or desktop</li>
-              </ul>
-            </div>
-
-            <div class="motive">
-              <h5 class="blue">Motivations</h5>
-              <p class="left">Jodi is a stay at home mom who uses sharing services to send things to her tight knit group of friends and family. She likes to make to do lists for her kids activities, make meal plans, share aspirational images and photos of her family. She mostly does this from home, but likes to have access from her mobile phone as well, when she’s on the go for her kids’ activities or a family outing.</p>
-            </div>
-
-            <div class="bio">
-              <h5 class="blue">Bio</h5>
-              <p class="left">Jodi has a full time job of taking care of her three children, ages 8 - 14. Between kids activities, planning meals, taking care of the house and shuttling everyone to their respective activities, she has little time for herself and looks for services that can help her manage time. When she has a moment to herself, she likes to save recipes, share pictures with her friends and family, and relax on the couch with the family cat.</p>
-            </div>
-
-          </div>
-
-          <div class="persona block">
-            <img src="images/Digs/brett.jpg" class="personas" alt="brett">
-
-            <div class="about">
-              <h5>Brett Jones</h5>
-              <ul>
-                <li><b class="blue">Age:</b> 35</li>
-                <li><b class="blue">Occupation:</b> Insurance</li>
-                <li><b class="blue">Location:</b> NYC</li>
-                <li><b class="blue">User Type:</b> Professional</li>
-              </ul>
-
-            </div>
-
-            <div class="goal">
-              <h5 class="blue">Goals</h5>
-              <ul>
-                <li>Accessibility from all devices.</li>
-                <li>Easy collaboration with coworkers</li>
-                <li>Updates in real time</li>
-                <li>Staying in tip top shape</li>
-              </ul>
-            </div>
-
-            <div class="frustrate">
-              <h5 class="blue">Frustrations</h5>
-              <ul>
-                <li>Not knowing what is going on in the office</li>
-                <li>Unreponsive coworkers</li>
-                <li>Slow internet connections</li>
-                <li>Flat bicycle tires</li>
-              </ul>
-            </div>
-
-            <div class="motive">
-              <h5 class="blue">Motivations</h5>
-              <p class="left">Brett loves his job and is 100% dedicated to being the best and most efficient worker. He travels for work fairly often, but also prefers to be connected and know what is going in the office 24/7. He loves bouncing ideas around with his coworkers and is always looking for the best resources to make communication around the office as seamless as possible, regardless of a person’s physical presence.</p>
-            </div>
-
-            <div class="bio">
-              <h5 class="blue">Bio</h5>
-              <p class="left">Brett is a workaholic. He spends most of his time working or thinking about work. In what little free time he has that isn’t devoted to work, he likes to ride his bicycle all over the city to stay in good shape. You have to stay in shape to keep your mind sharp, plus it gives him more free time to think about work! He also visits his family four times a year so his PTO doesn’t expire.</p>
-            </div>
-          </div>
-      </div>
-
+      <!--
       <div class="user-stories block hscroll">
         <h4 class="border">User Stories</h4>
         <p class="left">After creating the user personas, it was time to look at how a user would actually use this site. The myriad ways a user could navigate through the site is outlined in individual user stories which show the type of user, their objective, and how important the task is to the site's overall integrity.</p>
+
         <table>
           <thead>
             <tr>
@@ -635,10 +638,10 @@
 
           </tbody>
         </table>
-
       </div>
+      -->
 
-      <div class="user-flows block">
+      <div class="block">
         <h4 class="border">User Flows</h4>
 
         <div class="flow">
@@ -1001,9 +1004,9 @@
 
     <footer class="footer">
       <nav>
-        <a href="mailto:kathryn.gesner@gmail.com" target="_blank" class="navbar"><img src="images/email-icon.svg" alt="Email" style="width: 3rem;"></a>
-        <a href="http://linkedin.com/in/kgesner" target="_blank" class="navbar"><img src="images/linkedin-icon.svg" alt="LinkedIn" style="width: 3rem;"></a>
-        <a href="https://www.pinterest.com/phantomwombats/" target="_blank" class="navbar"><img src="images/pinterest-icon.svg" alt="Pinterest" style="width: 3rem;"></a>
+        <a href="mailto:kathryn.gesner@gmail.com" target="_blank" class="nav"><img src="images/email-icon.svg" alt="Email" style="width: 3rem;"></a>
+        <a href="http://linkedin.com/in/kgesner" target="_blank" class="nav"><img src="images/linkedin-icon.svg" alt="LinkedIn" style="width: 3rem;"></a>
+        <a href="https://www.pinterest.com/phantomwombats/" target="_blank" class="nav"><img src="images/pinterest-icon.svg" alt="Pinterest" style="width: 3rem;"></a>
       </nav>
       <div class="foot-logo">
         <p class="footer-logo-2">© 2019 Kathryn Gesner</p>
