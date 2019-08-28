@@ -23,9 +23,15 @@
       </a>
 
       <nav>
-          <a href="project.html" class="navbar">Projects</a>
-          <a href="bio.html" class="navbar">About</a>
-          <a href="resume.pdf" target="_blank" class="navbar">Resume</a>
+        <div class="dropdown">
+          <a href="#dropdown-content" class="navbar">Projects</a>
+          <div class="dropdown-content">
+            <a href="digs.html" class="navbar">Digs</a>
+            <a href="the-e-c.html" class="navbar">The Exquisite Corpse</a>
+          </div>
+        </div>
+        <a button="bio.html" class="navbar">About</button>
+        <a button="resume.pdf" target="_blank" class="navbar">Resume</button>
       </nav>
     </header>
 
@@ -40,7 +46,7 @@
     </section>
 
     <!-- FEATURED PROJECTS -->
-    <section class="digs-home">
+    <section class="project-home">
       <h3>See my work:</h3>
       <div class="project">
         <img src="images/home-page.jpg" class="digs-home-page" alt="digs-home">
@@ -68,7 +74,37 @@
           <br>
         </div>
       </div>
+    </section>
 
+    <section class="project-home">
+      <div class="project">
+        <div class="image">
+          <img src="images/the-e-c/section-image1.png" class="ec" alt="ec-home">
+        </div>
+
+        <h3>The Exquisite Corpse</h3>
+        <div class="info-main">
+          <div class="problem-main">
+            <h4>Problem</h4>
+            <ul>
+              <li>This is a very fun game, and it would be fun to have a mobile version to play with anyone, anywhere.</li>
+            </ul>
+          </div>
+
+          <div class="solution-main">
+            <h4>Solution</h4>
+            <ul>
+              <li>Exquisite Corpse in a drawing game that has three different people draw three sections of the same body. This game was a favorite among college friends, and I was surprised that it didn’t exist yet, so I decided to create a concept design.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="button-grid button-padding">
+          <br>
+          <button onClick="window.location.href = 'project.html'" type="button" name="view" class="view-button"><a href="the-e-c.html">check it out</button></a>
+          <br>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
