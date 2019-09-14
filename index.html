@@ -15,7 +15,7 @@
   <body class="container">
     <header class="header">
       <a href="index.html">
-        <svg class="kglogo" width="127" height="75" viewBox="0 0 127 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="logo" width="127" height="75" viewBox="0 0 127 150" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1.5" y="1.5" width="124" height="170" stroke="#20435D" stroke-width="3"/>
         <path d="M17.7898 10.9055V119.464L37.0622 98.397M56.3345 77.3296L37.0622 98.397M37.0622 98.397C39.533 105.419 48.1314 119.464 62.7587 119.464" stroke="#20435D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M103.5 97C103.5 112 90.5 117.81 82.5 118C72.5 118.238 60.8451 111.5 60.5 97C60.1548 82.5 71 74.5 81.5 74.5C90.4999 74.5 103.5 80.5 103.5 97Z" stroke="#20435D" stroke-width="3"/>
@@ -31,8 +31,9 @@
             <a href="project--eq-corpse.html" class="nav">The Exquisite Corpse</a>
           </div>
         </div>
-        <a button="about-me.html" class="nav">About</a>
-        <a button="resume.pdf" target="_blank" class="nav">Resume</a>
+        <a href="portfolio.html" class="nav">Portfolio</a>
+        <a href="about-me.html" class="nav">About</a>
+        <a href="resume.pdf" target="_blank" class="nav">Resume</a>
       </nav>
     </header>
 
@@ -51,65 +52,67 @@
     </section>
 
     <!-- FEATURED PROJECTS -->
-    <section class="project-home">
+    <section>
       <h3>See my work:</h3>
-      <div class="project">
-        <img src="images/home-page.jpg" class="digs-home-page" alt="digs-home">
-        <h3>Digs</h3>
-        <p class="left">Digs helps you make the most of your decor dreams with features tailored specifically to your design needs.</p>
-        <div class="info-main">
-          <div class="problem-main">
-            <h4>Problem</h4>
-            <ul>
-              <li>A site for users who are passionate about home decor and DIY.</li>
-            </ul>
+      <div class="preview">
+        <div class="project">
+          <img src="images/home-page.jpg" class="digs-home-page" alt="digs-home">
+          <h3>Digs</h3>
+          <p class="left">Digs helps you make the most of your decor dreams with features tailored specifically to your design needs.</p>
+          <div class="info-main">
+            <div class="problem-main">
+              <h4>Problem</h4>
+              <ul>
+                <li>A site for users who are passionate about home decor and DIY.</li>
+              </ul>
+            </div>
+
+            <div class="solution-main">
+              <h4>Solution</h4>
+              <ul>
+                <li>Digs is the solution to the lack of a platform for purely home decor related content.</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="solution-main">
-            <h4>Solution</h4>
-            <ul>
-              <li>Digs is the solution to the lack of a platform for purely home decor related content.</li>
-            </ul>
+          <div class="button-grid button-padding">
+            <br>
+            <button onClick="window.location.href = 'project.html'" type="button" name="view" class="view-button"><a href="project.html">check it out</button></a>
+            <br>
           </div>
         </div>
 
-        <div class="button-grid button-padding">
-          <br>
-          <button onClick="window.location.href = 'project.html'" type="button" name="view" class="view-button"><a href="project.html">check it out</button></a>
-          <br>
+        <div class="project">
+          <div class="image">
+            <img src="images/the-e-c/section-image1.png" class="ec" alt="ec-home">
+          </div>
+
+          <h3>The Exquisite Corpse</h3>
+          <p class="left">Exquisite Corpse is a fun and silly game that I used to play with my college friends.</p>
+          <div class="info-main">
+            <div class="problem-main">
+              <h4>Problem</h4>
+              <ul>
+                <li>I'd like to find a way to continue a college tradition with my friends.</li>
+              </ul>
+            </div>
+
+            <div class="solution-main">
+              <h4>Solution</h4>
+              <ul>
+                <li>Create a digital prototype of a mobile app for this drawing game.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="button-grid button-padding">
+            <br>
+            <button onClick="window.location.href = 'project.html'" type="button" name="view" class="view-button"><a href="the-e-c.html">check it out</button></a>
+            <br>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="project-home">
-      <div class="project">
-        <div class="image">
-          <img src="images/the-e-c/section-image1.png" class="ec" alt="ec-home">
-        </div>
-
-        <h3>The Exquisite Corpse</h3>
-        <div class="info-main">
-          <div class="problem-main">
-            <h4>Problem</h4>
-            <ul>
-              <li>This is a very fun game, and it would be fun to have a mobile version to play with anyone, anywhere.</li>
-            </ul>
-          </div>
-
-          <div class="solution-main">
-            <h4>Solution</h4>
-            <ul>
-              <li>Exquisite Corpse in a drawing game that has three different people draw three sections of the same body. This game was a favorite among college friends, and I was surprised that it didn’t exist yet, so I decided to create a concept design.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="button-grid button-padding">
-          <br>
-          <button onClick="window.location.href = 'project.html'" type="button" name="view" class="view-button"><a href="the-e-c.html">check it out</button></a>
-          <br>
-        </div>
-      </div>
     </section>
 
     <footer class="footer">

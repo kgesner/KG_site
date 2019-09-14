@@ -43,6 +43,8 @@ body {
     max-width: 80%;
   }
 
+
+
   /* Dropdown Button */
   .dropbtn {
     background-color: inherit;
@@ -103,7 +105,7 @@ body {
   }
 
   .nav--links {
-    
+
   }
 
   .nav {
@@ -234,6 +236,7 @@ body {
     font-size: 150%;
     font-weight: 100;
     line-height: 130%;
+    list-style: none;
     margin-bottom: 5px;
   }
 
@@ -300,11 +303,15 @@ body {
 
 /* SECTIONS */
 
-  section {
-    margin: 2% auto;
+  .question {
+    margin: 5% auto;
     max-width: 1000px;
-    padding: 5% 10% 0 10%;
+    padding-bottom: 5%;
     position: relative;
+  }
+
+  .summary, .research, .branding, .execution, .learnings {
+    margin: 2% 10%;
   }
 
   .block {
@@ -386,8 +393,9 @@ body {
       text-align: center;
     }
 
-    .research, .execution {
+    .background-color {
       background-color: #f7fffa;
+      padding: 5%;
     }
 
     .summary-lists {
@@ -534,7 +542,7 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 2px;
-  }
+    }
 
     .logo {
       border-radius: .25rem;
@@ -718,7 +726,16 @@ body {
       grid-template-columns: 1fr;
       grid-gap: 2px;
     }
+/* PORTFOLIO */
+.thumbnail {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 5%;
+}
 
+img.port-thumb {
+  width: 90%;
+}
 
 @media screen and (min-width: 768px) {
   .view-button {
@@ -852,7 +869,14 @@ body {
     width: 11%;
   }
 
-/* INDEX.HTML */
+  .preview {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    margin: 5%;
+  }
+
+ /* INDEX.HTML */
   .info-main {
     display: grid;
     grid-gap: 5px 34px;
@@ -893,6 +917,7 @@ body {
 
   .about {
     align-items: center;
+    padding: 5% 10% 0 10%;
   }
 
   td {
