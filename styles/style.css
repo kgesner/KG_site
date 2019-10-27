@@ -124,6 +124,13 @@ body {
     overflow: hidden;
   }
 
+  .error {
+    text-align: center;
+  }
+
+  .error-image {
+    width: 75%;
+  }
 
 /* BUTTON */
 
@@ -232,11 +239,11 @@ body {
 
   li {
     color: #166D8C;
-    font-family: "Futura-PT", sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 150%;
     font-weight: 100;
     line-height: 130%;
-    list-style: none;
+    list-style: inside;
     margin-bottom: 5px;
   }
 
@@ -288,7 +295,7 @@ body {
 
   p {
     color: #166D8C;
-    font-family: "Futura-PT", sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 160%;
     font-weight: 100;
     line-height: 2rem;
@@ -399,9 +406,11 @@ body {
     }
 
     .summary-lists {
+      align-self: baseline;
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 1fr 1fr;
+      margin: 0 0 0% 5%;
     }
 
     .summary-list {
@@ -409,7 +418,8 @@ body {
     }
 
     .summary-solution {
-      margin: 10% 0% 11% 0%;
+      align-self: baseline;
+      margin: 0% 0% 0% 0%;
       width: 100%;
     }
 
@@ -418,7 +428,8 @@ body {
     }
 
     .summary-problem {
-      margin: 0% 0% 0% 0%;
+      align-self: baseline;
+      margin:05% 0% 0% 3%;
       padding: 0 0 5% 0;
       width: 100%;
     }
@@ -449,23 +460,30 @@ body {
       font-weight: 300;
     }
 
+    .competition-grid {
+      border-bottom: .1rem dotted #000000;
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+
     img.competitor {
       margin: 1% 0%;
       width: 15%;
     }
 
     .evernote {
-      border-bottom: .1rem dotted #000000;
-      padding-bottom: 5%;
+      margin: 0 2% 0 2%;
+      padding-bottom: 5% 2% 0 2%;
     }
 
     .google-drive {
-      padding: 5% 0;
+      margin: 0 2% 0 2%;
+      padding: 5% 2% 0 2%;
     }
 
     .morpholio {
-      border-bottom: .1rem dotted #000000;
-      padding: 5% 0;
+      margin: 0 2% 0 2%;
+      padding: 5% 2% 0 2%;
     }
 
     table {
@@ -474,7 +492,7 @@ body {
 
     th, td {
        color: #20435D;
-       font-family: "Futura-PT", sans-serif;
+       font-family: "Avenir", sans-serif;
        padding: 8px 2px;
      }
 
@@ -536,6 +554,11 @@ body {
       padding: 10px;
     }
 
+    .persona-grid {
+      border-bottom: .1rem dotted #000000;
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
 
   /* BRANDING */
     .brainstorm-grid {
@@ -609,7 +632,7 @@ body {
     }
 
     p[class*="sg"] {
-      font-family: "Futura-PT", sans-serif;
+      font-family: "Avenir", sans-serif;
       line-height: normal;
       text-align: left;
     }
@@ -819,7 +842,7 @@ img.port-thumb {
 
   p {
     color: #166D8C;
-    font-family: "Futura-PT", sans-serif;
+    font-family: "Avenir", sans-serif;
     font-size: 190%;
     font-weight: 100;
     line-height: 2.5rem;
@@ -909,15 +932,15 @@ img.port-thumb {
     width: 60%;
   }
 
-  .persona {
+  /*.persona {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-  }
+  }*/
 
   .about {
     align-items: center;
-    padding: 5% 10% 0 10%;
+    padding: 5% 0% 0 0%;
   }
 
   td {
@@ -1046,7 +1069,7 @@ img.port-thumb {
   }
 
   li {
-    font-size: 200%;
+    font-size: 170%;
     line-height: 130%;
   }
 
@@ -1062,7 +1085,7 @@ img.port-thumb {
   }
 
   p {
-    font-size: 200%;
+    font-size: 180%;
     line-height: 3rem;
   }
 
@@ -1207,16 +1230,12 @@ img.port-thumb {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  /* PERSONAS */
-
-
   /* BRANDING */
 
   .logo {
     margin: 1% 33%;
     width: 35%;
   }
-
 
   /* STYLE GUIDE */
   .color-palette {
@@ -1254,6 +1273,31 @@ img.port-thumb {
   }
 
 
-  /* FOOTER */
+  /* BURN MAN */
+  /*.content-body {
+    display: inline-grid;
+    grid-template-columns: auto;
+  }*/
+
+  .summary {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    max-width: 95%;
+    overflow: hidden;
+  }
+
+  .summary-hero {
+    text-align: -webkit-center;
+  }
+
+  .draft {
+    margin: 3%;
+  }
+
+  .summary--image {
+    width: 90%;
+  }
 
 }
