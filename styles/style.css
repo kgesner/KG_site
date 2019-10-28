@@ -21,6 +21,7 @@ body {
   /*background: #E6EEE9;*/
   background-color: #f7fff9;
   background-image: linear-gradient(235deg, #f7fff9 0%, #e1f1e5 100%);
+  max-width: 1025px;
   transition: background 1s ease;
 }
 
@@ -95,7 +96,7 @@ body {
   }*/
 
 
-  .logo {
+  .nav-logo {
     width: 45px;
     margin: 30%;
   }
@@ -173,6 +174,10 @@ body {
 
   a.current:hover {
     color: #C0D5C9;
+  }
+
+  .center {
+    text-align: center;
   }
 
   h1 {
@@ -310,6 +315,11 @@ body {
 
 /* SECTIONS */
 
+  .about, .index {
+    align-items: center;
+    padding: 5% 5% 0 5%;
+  }
+
   .question {
     margin: 5% auto;
     max-width: 1000px;
@@ -419,7 +429,7 @@ body {
 
     .summary-solution {
       align-self: baseline;
-      margin: 0% 0% 0% 0%;
+      margin: 5% 0% 0% 3%;
       width: 100%;
     }
 
@@ -429,7 +439,7 @@ body {
 
     .summary-problem {
       align-self: baseline;
-      margin:05% 0% 0% 3%;
+      margin: 5% 0% 0% 3%;
       padding: 0 0 5% 0;
       width: 100%;
     }
@@ -460,10 +470,9 @@ body {
       font-weight: 300;
     }
 
-    .competition-grid {
-      border-bottom: .1rem dotted #000000;
-      display: grid;
-      grid-template-columns: auto auto auto;
+    .comp-analysis {
+      border-top: .1rem dotted #20435D;
+      padding: 2%;
     }
 
     img.competitor {
@@ -555,15 +564,11 @@ body {
     }
 
     .persona {
-      border-top: .1rem dotted #000000;
       padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
     }
 
-    .persona-grid {
-      border-bottom: .1rem dotted #000000;
-      display: grid;
-      grid-template-columns: auto auto auto;
-    }
 
   /* BRANDING */
     .brainstorm-grid {
@@ -578,14 +583,33 @@ body {
       width: 50%;
     }
 
+    .branding--logo-designs {
+      text-align: center;
+    }
+
+    .branding-logo {
+      width: 50%;
+    }
+
     .logo-gallery {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: auto auto auto;
+      grid-gap: 1px;
+    }
+
+    .logo-gallery-ec {
+      display: grid;
+      grid-template-columns: auto auto;
       grid-gap: 1px;
     }
 
 
   /* STYLE GUIDE */
+    .alphabet-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+
     .brand-intro {
       border-bottom: .1rem dotted #20435D;
       margin-top: 8%;
@@ -635,6 +659,12 @@ body {
       font-size: 118%;
       font-weight: 300;
     }
+
+    /*.style-guide-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 5px;
+    }*/
 
     p[class*="sg"] {
       font-family: "Avenir", sans-serif;
@@ -785,6 +815,8 @@ img.port-thumb {
   width: 90%;
 }
 
+
+/*-------------------------------------------*/
 @media screen and (min-width: 768px) {
   .view-button {
     font-size: 190%;
@@ -924,6 +956,7 @@ img.port-thumb {
     margin: 5%;
   }
 
+
  /* INDEX.HTML */
   .info-main {
     display: grid;
@@ -932,7 +965,22 @@ img.port-thumb {
     padding-top: 20px;
   }
 
+
  /* PROJECT.HTML */
+
+ .competitors {
+   display: grid;
+   grid-template-columns: auto auto;
+ }
+
+ .persona {
+   display: inline-block;
+ }
+
+ .persona-grid {
+   display: grid;
+   grid-template-columns: auto auto;
+ }
 
   /* OVERVIEW */
   .info {
@@ -986,10 +1034,15 @@ img.port-thumb {
 
   .logo-gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-gap: 1px;
   }
 
+  .logo-gallery-ec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1px;
+  }
 
     /* STYLE GUIDE */
     .brand-intro {
@@ -998,7 +1051,7 @@ img.port-thumb {
 
     .style-guide-grid {
       display: grid;
-      grid-template-columns: 1fr 1.25fr;
+      grid-template-columns: auto auto;
       grid-gap: 5px;
     }
 
@@ -1076,6 +1129,8 @@ img.port-thumb {
   /* FOOTER */
 }
 
+
+/*-------------------------------------------*/
 @media screen and (min-width: 1025px) {
 
   .view-button-sm {
@@ -1137,7 +1192,6 @@ img.port-thumb {
 
   header {
     margin: 1%;
-    max-width: 1000px;
     padding: 1% 1% 1% 1%;
     width: 8%;
   }
